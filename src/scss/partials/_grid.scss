@@ -1,0 +1,32 @@
+$grid-columns: 12;
+$grid-container-width: 900px;
+$grid-breakpoint: 720px;
+
+.container{
+  width: 100%;
+  max-width: $grid-container-width;
+  margin: 0 auto;
+}
+
+.row {
+  @extend %clearfix;
+
+
+  [class *= 'col-'] {
+    width: 100%;
+
+    @media (min-width: $grid-breakpoint){
+      min-height: 1px;
+      float: left;
+    }
+  }
+
+  @media(min-width: $grid-breakpoint){
+
+    @for $i from 1 through $grid-columns {
+      .col-#{$i} {
+        width: (100% / $grid-columns) * $i;
+      }
+    }
+  }
+}
