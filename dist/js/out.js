@@ -612,8 +612,27 @@ var ViewTwo = function (_React$Component2) {
     return ViewTwo;
 }(_react2.default.Component);
 
-var Header = function (_React$Component3) {
-    _inherits(Header, _React$Component3);
+var ViewThree = function (_React$Component3) {
+    _inherits(ViewThree, _React$Component3);
+
+    function ViewThree() {
+        _classCallCheck(this, ViewThree);
+
+        return _possibleConstructorReturn(this, (ViewThree.__proto__ || Object.getPrototypeOf(ViewThree)).apply(this, arguments));
+    }
+
+    _createClass(ViewThree, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(Skills, null);
+        }
+    }]);
+
+    return ViewThree;
+}(_react2.default.Component);
+
+var Header = function (_React$Component4) {
+    _inherits(Header, _React$Component4);
 
     function Header() {
         _classCallCheck(this, Header);
@@ -648,8 +667,8 @@ var Header = function (_React$Component3) {
     return Header;
 }(_react2.default.Component);
 
-var Menu = function (_React$Component4) {
-    _inherits(Menu, _React$Component4);
+var Menu = function (_React$Component5) {
+    _inherits(Menu, _React$Component5);
 
     function Menu() {
         _classCallCheck(this, Menu);
@@ -706,8 +725,8 @@ var Menu = function (_React$Component4) {
     return Menu;
 }(_react2.default.Component);
 
-var Quote = function (_React$Component5) {
-    _inherits(Quote, _React$Component5);
+var Quote = function (_React$Component6) {
+    _inherits(Quote, _React$Component6);
 
     function Quote() {
         _classCallCheck(this, Quote);
@@ -743,8 +762,8 @@ var Quote = function (_React$Component5) {
     return Quote;
 }(_react2.default.Component);
 
-var About = function (_React$Component6) {
-    _inherits(About, _React$Component6);
+var About = function (_React$Component7) {
+    _inherits(About, _React$Component7);
 
     function About() {
         _classCallCheck(this, About);
@@ -766,12 +785,34 @@ var About = function (_React$Component6) {
                         { className: 'row' },
                         _react2.default.createElement(
                             'div',
-                            { className: 'col-6' },
-                            'I,m ',
+                            { className: 'col-12' },
+                            'Who am I?'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'row' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'col-6 name' },
                             _react2.default.createElement(
-                                'span',
+                                'div',
                                 null,
-                                'Piotr Rawski'
+                                'Hello, I\'m\xA0 ',
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    'Piotr Rawski'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'row photo' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'col-12' },
+                                    _react2.default.createElement('div', { className: 'myphoto' })
+                                )
                             )
                         ),
                         _react2.default.createElement(
@@ -788,8 +829,91 @@ var About = function (_React$Component6) {
     return About;
 }(_react2.default.Component);
 
-var App = function (_React$Component7) {
-    _inherits(App, _React$Component7);
+var Skills = function (_React$Component8) {
+    _inherits(Skills, _React$Component8);
+
+    function Skills() {
+        _classCallCheck(this, Skills);
+
+        return _possibleConstructorReturn(this, (Skills.__proto__ || Object.getPrototypeOf(Skills)).apply(this, arguments));
+    }
+
+    _createClass(Skills, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'section',
+                { className: 'skills' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'container' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'row' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'col-4 html' },
+                            'HTML'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'col-4 css' },
+                            'CSS'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'col-4 js' },
+                            'JAVASCRIPT'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'row' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'col-4 es6' },
+                            'ES6'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'col-4 react' },
+                            'REACT'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'col-4 jquery' },
+                            'JQUERY'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'row' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'col-4 sass' },
+                            'SASS'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'col-4 rwd' },
+                            'RWD'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'col-4 git' },
+                            'GIT'
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Skills;
+}(_react2.default.Component);
+
+var App = function (_React$Component9) {
+    _inherits(App, _React$Component9);
 
     function App() {
         _classCallCheck(this, App);
@@ -804,7 +928,8 @@ var App = function (_React$Component7) {
                 'div',
                 null,
                 _react2.default.createElement(ViewOne, null),
-                _react2.default.createElement(ViewTwo, null)
+                _react2.default.createElement(ViewTwo, null),
+                _react2.default.createElement(ViewThree, null)
             );
         }
     }]);

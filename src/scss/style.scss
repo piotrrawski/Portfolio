@@ -27,6 +27,7 @@ header {
   position: fixed;
   width: 100%;
   //border: solid 1px red;
+
   .row {
     display: flex;
     //align-items: center;
@@ -94,8 +95,89 @@ header {
 
 .about {
   height: 100vh;
-  font-size: 1.5rem;
-  span {
-    color: #fec010;
+  font-size: 2rem;
+  .col-12 {
+    text-align: center;
+    margin: 75px 0;
+    font-weight: 400;
+    opacity: 0.8;
+    text-decoration: underline;
+    text-decoration-color: #fec010;
   }
+  .col-6 {
+    //border: 1px solid red;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.8;
+      span {
+        color: #fec010;
+      }
+  }
+}
+
+.photo {
+  .col-12 {
+opacity: 1 !important;
+  }
+  .myphoto {
+    width: 200px !important;
+    height: 200px;
+    background-image: url("../images/me.jpg");
+    background-size: cover;
+    border-radius: 100%;
+    box-shadow: 5px 5px 50px 0px rgba(0,0,0,0.5);
+  }
+}
+
+.skills {
+  height: 100vh;
+  .col-4 {
+    height: 33vh;
+    border: solid 1px red;
+
+  }
+}
+
+.html {
+  background-image: url("../images/HTML5_Badge_512.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.css {
+  background-image: url("../images/css.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.js {
+  background-image: url("../images/jss.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.git {
+  background-image: url("../images/git.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.jquery {
+  background-image: url("../images/jquery.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.react {
+  background-image: url("../images/react.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sass {
+  background-image: url("../images/sass.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
