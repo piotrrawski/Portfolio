@@ -583,7 +583,9 @@ var ViewOne = function (_React$Component) {
             return _react2.default.createElement(
                 'div',
                 { className: 'background' },
-                _react2.default.createElement(Header, null)
+                _react2.default.createElement(Header, null),
+                _react2.default.createElement(Quote, null),
+                _react2.default.createElement('div', null)
             );
         }
     }]);
@@ -591,8 +593,27 @@ var ViewOne = function (_React$Component) {
     return ViewOne;
 }(_react2.default.Component);
 
-var Header = function (_React$Component2) {
-    _inherits(Header, _React$Component2);
+var ViewTwo = function (_React$Component2) {
+    _inherits(ViewTwo, _React$Component2);
+
+    function ViewTwo() {
+        _classCallCheck(this, ViewTwo);
+
+        return _possibleConstructorReturn(this, (ViewTwo.__proto__ || Object.getPrototypeOf(ViewTwo)).apply(this, arguments));
+    }
+
+    _createClass(ViewTwo, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(About, null);
+        }
+    }]);
+
+    return ViewTwo;
+}(_react2.default.Component);
+
+var Header = function (_React$Component3) {
+    _inherits(Header, _React$Component3);
 
     function Header() {
         _classCallCheck(this, Header);
@@ -627,8 +648,8 @@ var Header = function (_React$Component2) {
     return Header;
 }(_react2.default.Component);
 
-var Menu = function (_React$Component3) {
-    _inherits(Menu, _React$Component3);
+var Menu = function (_React$Component4) {
+    _inherits(Menu, _React$Component4);
 
     function Menu() {
         _classCallCheck(this, Menu);
@@ -648,16 +669,7 @@ var Menu = function (_React$Component3) {
                     _react2.default.createElement(
                         'a',
                         { href: '/' },
-                        'About'
-                    )
-                ),
-                _react2.default.createElement(
-                    'li',
-                    null,
-                    _react2.default.createElement(
-                        'a',
-                        { href: '/' },
-                        'Skills'
+                        'Contact'
                     )
                 ),
                 _react2.default.createElement(
@@ -675,7 +687,16 @@ var Menu = function (_React$Component3) {
                     _react2.default.createElement(
                         'a',
                         { href: '/' },
-                        'Contact'
+                        'Skills'
+                    )
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    _react2.default.createElement(
+                        'a',
+                        { href: '/' },
+                        'About'
                     )
                 )
             );
@@ -685,8 +706,90 @@ var Menu = function (_React$Component3) {
     return Menu;
 }(_react2.default.Component);
 
-var App = function (_React$Component4) {
-    _inherits(App, _React$Component4);
+var Quote = function (_React$Component5) {
+    _inherits(Quote, _React$Component5);
+
+    function Quote() {
+        _classCallCheck(this, Quote);
+
+        return _possibleConstructorReturn(this, (Quote.__proto__ || Object.getPrototypeOf(Quote)).apply(this, arguments));
+    }
+
+    _createClass(Quote, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'section',
+                { className: 'quote' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'row' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'col-6' },
+                        'Topping pie powder jelly-o toffee ice cream. ',
+                        _react2.default.createElement(
+                            'span',
+                            null,
+                            'Chocolate'
+                        ),
+                        ' cake pudding souffl\xE9 toffee bear claw. Pudding cookie lemon drops wafer lemon drops.'
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Quote;
+}(_react2.default.Component);
+
+var About = function (_React$Component6) {
+    _inherits(About, _React$Component6);
+
+    function About() {
+        _classCallCheck(this, About);
+
+        return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
+    }
+
+    _createClass(About, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'section',
+                { className: 'about' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'container' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'row' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'col-6' },
+                            'I,m ',
+                            _react2.default.createElement(
+                                'span',
+                                null,
+                                'Piotr Rawski'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'col-6' },
+                            'Tootsie roll bonbon bear claw pie. Tiramisu souffl\xE9 candy wafer lemon drops. Lollipop cookie dessert oat cake sugar plum powder muffin muffin sugar plum. Chupa chups chocolate bar brownie halvah candy lemon drops icing. Cookie candy gingerbread cheesecake. Icing caramels jelly-o bonbon jelly-o jelly-o lollipop bear claw. Pie bonbon tiramisu tart brownie.'
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return About;
+}(_react2.default.Component);
+
+var App = function (_React$Component7) {
+    _inherits(App, _React$Component7);
 
     function App() {
         _classCallCheck(this, App);
@@ -697,7 +800,12 @@ var App = function (_React$Component4) {
     _createClass(App, [{
         key: 'render',
         value: function render() {
-            return _react2.default.createElement(ViewOne, null);
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(ViewOne, null),
+                _react2.default.createElement(ViewTwo, null)
+            );
         }
     }]);
 

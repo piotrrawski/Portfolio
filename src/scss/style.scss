@@ -2,43 +2,100 @@
 @import "partials/clear";
 @import "partials/grid";
 
+* {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
 .background {
   background-image: url("../images/background.jpeg");
   background-size: cover;
   height: 100vh;
   color: white;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
+  display: flex;
+  //flex-direction: column;
+  //justify-content: space-between;
+  flex-wrap: wrap;
 }
+
 
 header {
   background-color: rgba(255, 255, 255, 0.1);
   opacity: 0.7;
-  padding: 10px;
+  //padding: 10px;
+  padding-left: 10px;
+  position: fixed;
+  width: 100%;
+  //border: solid 1px red;
   .row {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    //align-items: center;
+    //justify-content: space-between;
     .logo{
       color: white;
       font-family: 'Lato', sans-serif;
       font-size: 2rem;
+      float: left;
+      //line-height: inherit;
+      align-self: center;
     }
     .menu {
       font-size: 1.4rem;
+      //float: right;
+      //display: inline;
+      //border: solid 1px blue;
       ul {
-        display: flex;
-        justify-content: flex-end;
+        //display: flex;
+        //justify-content: flex-end;
+        //float: right;
         list-style-type: none;
+        //display: inline-block;
+        //overflow: hidden;
+
         li a {
           color: white;
-          padding-left: 15px;
+          padding-left: 10px;
+          padding-right: 10px;
           text-decoration: none;
+          float: right;
+          display: block;
+          padding-top: 20px;
+          padding-bottom: 20px;
         }
+      }
+      li a:hover {
+        background-color: #111;
+
       }
     }
   }
 }
 
+.quote {
+  //display: none;
+  font-size: 3rem;
+  opacity: 0.9;
+  align-self: flex-end;
+  padding-left: 10px;
+  ;
+  .row {
+    //overflow: auto;
 
+    .col-6 {
+      //align-self: flex-end;
 
+    }
+  }
+  span {
+    //color: #fcb507;
+    color: #fec010;
+  }
+}
+
+.about {
+  height: 100vh;
+  font-size: 1.5rem;
+  span {
+    color: #fec010;
+  }
+}

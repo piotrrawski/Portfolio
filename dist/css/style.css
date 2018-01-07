@@ -10,7 +10,7 @@
 
 .container {
   width: 100%;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto; }
 
 .row [class*='col-'] {
@@ -46,33 +46,58 @@
   .row .col-12 {
     width: 100%; } }
 
+* {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300; }
+
 .background {
   background-image: url("../images/background.jpeg");
   background-size: cover;
   height: 100vh;
   color: white;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300; }
+  display: flex;
+  flex-wrap: wrap; }
 
 header {
   background-color: rgba(255, 255, 255, 0.1);
   opacity: 0.7;
-  padding: 10px; }
+  padding-left: 10px;
+  position: fixed;
+  width: 100%; }
   header .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
+    display: flex; }
     header .row .logo {
       color: white;
       font-family: 'Lato', sans-serif;
-      font-size: 2rem; }
+      font-size: 2rem;
+      float: left;
+      align-self: center; }
     header .row .menu {
       font-size: 1.4rem; }
       header .row .menu ul {
-        display: flex;
-        justify-content: flex-end;
         list-style-type: none; }
         header .row .menu ul li a {
           color: white;
-          padding-left: 15px;
-          text-decoration: none; }
+          padding-left: 10px;
+          padding-right: 10px;
+          text-decoration: none;
+          float: right;
+          display: block;
+          padding-top: 20px;
+          padding-bottom: 20px; }
+      header .row .menu li a:hover {
+        background-color: #111; }
+
+.quote {
+  font-size: 3rem;
+  opacity: 0.9;
+  align-self: flex-end;
+  padding-left: 10px; }
+  .quote span {
+    color: #fec010; }
+
+.about {
+  height: 100vh;
+  font-size: 1.5rem; }
+  .about span {
+    color: #fec010; }
