@@ -87,7 +87,7 @@ class About extends React.Component {
             <section className="about">
                 <div className="container">
                     <div className="row">
-                        <div className="col-12">Who am I?</div>
+                        <div className="col-12 title">Who am I?</div>
                     </div>
                     <div className="row">
                     <div className="col-6 name">
@@ -119,18 +119,21 @@ class Skills extends React.Component {
             <section className="skills">
                 <div className="container">
                     <div className="row">
+                        <div className="col-12 title">Skills</div>
+                    </div>
+                    <div className="row">
                         <div className="col-4 html">HTML</div>
                         <div className="col-4 css">CSS</div>
-                        <div className="col-4 js">JAVASCRIPT</div>
-                    </div>
-                    <div className="row">
-                        <div className="col-4 es6">ES6</div>
-                        <div className="col-4 react">REACT</div>
-                        <div className="col-4 jquery">JQUERY</div>
-                    </div>
-                    <div className="row">
-                        <div className="col-4 sass">SASS</div>
                         <div className="col-4 rwd">RWD</div>
+                    </div>
+                    <div className="row">
+                        <div className="col-4 js">JS</div>
+                        <div className="col-4 react">REACT</div>
+                        <div className="col-4 es6">ES6</div>
+                    </div>
+                    <div className="row">
+                        <div className="col-4 jquery">JQUERY</div>
+                        <div className="col-4 sass">SASS</div>
                         <div className="col-4 git">GIT</div>
                     </div>
                 </div>

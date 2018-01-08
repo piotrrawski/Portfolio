@@ -785,7 +785,7 @@ var About = function (_React$Component7) {
                         { className: 'row' },
                         _react2.default.createElement(
                             'div',
-                            { className: 'col-12' },
+                            { className: 'col-12 title' },
                             'Who am I?'
                         )
                     ),
@@ -852,6 +852,15 @@ var Skills = function (_React$Component8) {
                         { className: 'row' },
                         _react2.default.createElement(
                             'div',
+                            { className: 'col-12 title' },
+                            'Skills'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'row' },
+                        _react2.default.createElement(
+                            'div',
                             { className: 'col-4 html' },
                             'HTML'
                         ),
@@ -862,8 +871,8 @@ var Skills = function (_React$Component8) {
                         ),
                         _react2.default.createElement(
                             'div',
-                            { className: 'col-4 js' },
-                            'JAVASCRIPT'
+                            { className: 'col-4 rwd' },
+                            'RWD'
                         )
                     ),
                     _react2.default.createElement(
@@ -871,8 +880,8 @@ var Skills = function (_React$Component8) {
                         { className: 'row' },
                         _react2.default.createElement(
                             'div',
-                            { className: 'col-4 es6' },
-                            'ES6'
+                            { className: 'col-4 js' },
+                            'JS'
                         ),
                         _react2.default.createElement(
                             'div',
@@ -881,8 +890,8 @@ var Skills = function (_React$Component8) {
                         ),
                         _react2.default.createElement(
                             'div',
-                            { className: 'col-4 jquery' },
-                            'JQUERY'
+                            { className: 'col-4 es6' },
+                            'ES6'
                         )
                     ),
                     _react2.default.createElement(
@@ -890,13 +899,13 @@ var Skills = function (_React$Component8) {
                         { className: 'row' },
                         _react2.default.createElement(
                             'div',
-                            { className: 'col-4 sass' },
-                            'SASS'
+                            { className: 'col-4 jquery' },
+                            'JQUERY'
                         ),
                         _react2.default.createElement(
                             'div',
-                            { className: 'col-4 rwd' },
-                            'RWD'
+                            { className: 'col-4 sass' },
+                            'SASS'
                         ),
                         _react2.default.createElement(
                             'div',
