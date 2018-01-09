@@ -585,7 +585,8 @@ var ViewOne = function (_React$Component) {
                 { className: 'background' },
                 _react2.default.createElement(Header, null),
                 _react2.default.createElement(Quote, null),
-                _react2.default.createElement('div', null)
+                _react2.default.createElement('div', null),
+                _react2.default.createElement(Cookies, null)
             );
         }
     }]);
@@ -631,8 +632,46 @@ var ViewThree = function (_React$Component3) {
     return ViewThree;
 }(_react2.default.Component);
 
-var Header = function (_React$Component4) {
-    _inherits(Header, _React$Component4);
+var ViewFour = function (_React$Component4) {
+    _inherits(ViewFour, _React$Component4);
+
+    function ViewFour() {
+        _classCallCheck(this, ViewFour);
+
+        return _possibleConstructorReturn(this, (ViewFour.__proto__ || Object.getPrototypeOf(ViewFour)).apply(this, arguments));
+    }
+
+    _createClass(ViewFour, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(Work, null);
+        }
+    }]);
+
+    return ViewFour;
+}(_react2.default.Component);
+
+var ViewFive = function (_React$Component5) {
+    _inherits(ViewFive, _React$Component5);
+
+    function ViewFive() {
+        _classCallCheck(this, ViewFive);
+
+        return _possibleConstructorReturn(this, (ViewFive.__proto__ || Object.getPrototypeOf(ViewFive)).apply(this, arguments));
+    }
+
+    _createClass(ViewFive, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(Contact, null);
+        }
+    }]);
+
+    return ViewFive;
+}(_react2.default.Component);
+
+var Header = function (_React$Component6) {
+    _inherits(Header, _React$Component6);
 
     function Header() {
         _classCallCheck(this, Header);
@@ -667,8 +706,8 @@ var Header = function (_React$Component4) {
     return Header;
 }(_react2.default.Component);
 
-var Menu = function (_React$Component5) {
-    _inherits(Menu, _React$Component5);
+var Menu = function (_React$Component7) {
+    _inherits(Menu, _React$Component7);
 
     function Menu() {
         _classCallCheck(this, Menu);
@@ -679,43 +718,61 @@ var Menu = function (_React$Component5) {
     _createClass(Menu, [{
         key: 'render',
         value: function render() {
-            return _react2.default.createElement(
-                'ul',
-                null,
+            return (
+                /*   <ul>
+                       <li><a href="/">Contact</a></li>
+                       <li><a href="/">My work</a></li>
+                       <li><a href="/">Skills</a></li>
+                       <li><a href="/">About</a></li>
+                   </ul>*/
+
                 _react2.default.createElement(
-                    'li',
-                    null,
+                    'ul',
+                    { className: 'snip1189' },
                     _react2.default.createElement(
-                        'a',
-                        { href: '/' },
-                        'Contact'
-                    )
-                ),
-                _react2.default.createElement(
-                    'li',
-                    null,
+                        'li',
+                        null,
+                        _react2.default.createElement(
+                            'a',
+                            { href: '#cont' },
+                            'Contact'
+                        )
+                    ),
                     _react2.default.createElement(
-                        'a',
-                        { href: '/' },
-                        'My work'
-                    )
-                ),
-                _react2.default.createElement(
-                    'li',
-                    null,
+                        'li',
+                        null,
+                        _react2.default.createElement(
+                            'a',
+                            { href: '#port' },
+                            'My work'
+                        )
+                    ),
                     _react2.default.createElement(
-                        'a',
-                        { href: '/' },
-                        'Skills'
-                    )
-                ),
-                _react2.default.createElement(
-                    'li',
-                    null,
+                        'li',
+                        null,
+                        _react2.default.createElement(
+                            'a',
+                            { href: '#skillss' },
+                            'Skills'
+                        )
+                    ),
                     _react2.default.createElement(
-                        'a',
-                        { href: '/' },
-                        'About'
+                        'li',
+                        null,
+                        _react2.default.createElement(
+                            'a',
+                            { href: '#abo' },
+                            'About'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'li',
+                        null,
+                        _react2.default.createElement(
+                            'a',
+                            { href: '#' },
+                            'Home'
+                        )
                     )
                 )
             );
@@ -725,8 +782,8 @@ var Menu = function (_React$Component5) {
     return Menu;
 }(_react2.default.Component);
 
-var Quote = function (_React$Component6) {
-    _inherits(Quote, _React$Component6);
+var Quote = function (_React$Component8) {
+    _inherits(Quote, _React$Component8);
 
     function Quote() {
         _classCallCheck(this, Quote);
@@ -752,7 +809,7 @@ var Quote = function (_React$Component6) {
                             null,
                             'Chocolate'
                         ),
-                        ' cake pudding souffl\xE9 toffee bear claw. Pudding cookie lemon drops wafer lemon drops.'
+                        ' cake pudding souffl\xE9 toffee bear claw.'
                     )
                 )
             );
@@ -762,8 +819,53 @@ var Quote = function (_React$Component6) {
     return Quote;
 }(_react2.default.Component);
 
-var About = function (_React$Component7) {
-    _inherits(About, _React$Component7);
+var Cookies = function (_React$Component9) {
+    _inherits(Cookies, _React$Component9);
+
+    function Cookies(props) {
+        _classCallCheck(this, Cookies);
+
+        var _this9 = _possibleConstructorReturn(this, (Cookies.__proto__ || Object.getPrototypeOf(Cookies)).call(this, props));
+
+        _this9.handleClick = function () {
+            console.log('click');
+            console.log(_this9.state.hiddenClass);
+            _this9.setState({
+                hiddenClass: "none"
+            });
+        };
+
+        _this9.state = {
+            hiddenClass: ""
+        };
+        return _this9;
+    }
+
+    _createClass(Cookies, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { id: 'cookies', style: { display: this.state.hiddenClass } },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'txt' },
+                    'By continuing to browse our site you agree to our use of cookies'
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'exit', onClick: this.handleClick },
+                    'OK'
+                )
+            );
+        }
+    }]);
+
+    return Cookies;
+}(_react2.default.Component);
+
+var About = function (_React$Component10) {
+    _inherits(About, _React$Component10);
 
     function About() {
         _classCallCheck(this, About);
@@ -776,7 +878,7 @@ var About = function (_React$Component7) {
         value: function render() {
             return _react2.default.createElement(
                 'section',
-                { className: 'about' },
+                { className: 'about', id: 'abo' },
                 _react2.default.createElement(
                     'div',
                     { className: 'container' },
@@ -817,7 +919,7 @@ var About = function (_React$Component7) {
                         ),
                         _react2.default.createElement(
                             'div',
-                            { className: 'col-6' },
+                            { className: 'col-6 aboTxt' },
                             'Tootsie roll bonbon bear claw pie. Tiramisu souffl\xE9 candy wafer lemon drops. Lollipop cookie dessert oat cake sugar plum powder muffin muffin sugar plum. Chupa chups chocolate bar brownie halvah candy lemon drops icing. Cookie candy gingerbread cheesecake. Icing caramels jelly-o bonbon jelly-o jelly-o lollipop bear claw. Pie bonbon tiramisu tart brownie.'
                         )
                     )
@@ -829,8 +931,8 @@ var About = function (_React$Component7) {
     return About;
 }(_react2.default.Component);
 
-var Skills = function (_React$Component8) {
-    _inherits(Skills, _React$Component8);
+var Skills = function (_React$Component11) {
+    _inherits(Skills, _React$Component11);
 
     function Skills() {
         _classCallCheck(this, Skills);
@@ -843,7 +945,7 @@ var Skills = function (_React$Component8) {
         value: function render() {
             return _react2.default.createElement(
                 'section',
-                { className: 'skills' },
+                { className: 'skills', id: 'skillss' },
                 _react2.default.createElement(
                     'div',
                     { className: 'container' },
@@ -862,17 +964,56 @@ var Skills = function (_React$Component8) {
                         _react2.default.createElement(
                             'div',
                             { className: 'col-4 html' },
-                            'HTML'
+                            _react2.default.createElement(
+                                'figure',
+                                { className: 'skill' },
+                                _react2.default.createElement('img', { src: 'dist/images/HTML5_Badge_512.png', alt: 'html' }),
+                                _react2.default.createElement(
+                                    'figcaption',
+                                    null,
+                                    _react2.default.createElement(
+                                        'i',
+                                        null,
+                                        'html'
+                                    )
+                                )
+                            )
                         ),
                         _react2.default.createElement(
                             'div',
                             { className: 'col-4 css' },
-                            'CSS'
+                            _react2.default.createElement(
+                                'figure',
+                                { className: 'skill' },
+                                _react2.default.createElement('img', { src: 'dist/images/css.png', alt: 'css' }),
+                                _react2.default.createElement(
+                                    'figcaption',
+                                    null,
+                                    _react2.default.createElement(
+                                        'i',
+                                        null,
+                                        'css'
+                                    )
+                                )
+                            )
                         ),
                         _react2.default.createElement(
                             'div',
                             { className: 'col-4 rwd' },
-                            'RWD'
+                            _react2.default.createElement(
+                                'figure',
+                                { className: 'skill' },
+                                _react2.default.createElement('img', { src: 'dist/images/rwd.png', alt: 'rwd' }),
+                                _react2.default.createElement(
+                                    'figcaption',
+                                    null,
+                                    _react2.default.createElement(
+                                        'i',
+                                        null,
+                                        'rwd'
+                                    )
+                                )
+                            )
                         )
                     ),
                     _react2.default.createElement(
@@ -881,36 +1022,114 @@ var Skills = function (_React$Component8) {
                         _react2.default.createElement(
                             'div',
                             { className: 'col-4 js' },
-                            'JS'
+                            _react2.default.createElement(
+                                'figure',
+                                { className: 'skill' },
+                                _react2.default.createElement('img', { src: 'dist/images/jss.jpg', alt: 'js' }),
+                                _react2.default.createElement(
+                                    'figcaption',
+                                    null,
+                                    _react2.default.createElement(
+                                        'i',
+                                        null,
+                                        'javascript'
+                                    )
+                                )
+                            )
                         ),
                         _react2.default.createElement(
                             'div',
                             { className: 'col-4 react' },
-                            'REACT'
+                            _react2.default.createElement(
+                                'figure',
+                                { className: 'skill' },
+                                _react2.default.createElement('img', { src: 'dist/images/react.png', alt: 'react' }),
+                                _react2.default.createElement(
+                                    'figcaption',
+                                    null,
+                                    _react2.default.createElement(
+                                        'i',
+                                        null,
+                                        'react'
+                                    )
+                                )
+                            )
                         ),
                         _react2.default.createElement(
                             'div',
                             { className: 'col-4 es6' },
-                            'ES6'
+                            _react2.default.createElement(
+                                'figure',
+                                { className: 'skill' },
+                                _react2.default.createElement('img', { src: 'dist/images/es6.png', alt: 'es6' }),
+                                _react2.default.createElement(
+                                    'figcaption',
+                                    null,
+                                    _react2.default.createElement(
+                                        'i',
+                                        null,
+                                        'es6'
+                                    )
+                                )
+                            )
                         )
                     ),
                     _react2.default.createElement(
                         'div',
-                        { className: 'row' },
+                        { className: 'row last' },
                         _react2.default.createElement(
                             'div',
                             { className: 'col-4 jquery' },
-                            'JQUERY'
+                            _react2.default.createElement(
+                                'figure',
+                                { className: 'skill' },
+                                _react2.default.createElement('img', { src: 'dist/images/jquery.png', alt: 'jquery' }),
+                                _react2.default.createElement(
+                                    'figcaption',
+                                    null,
+                                    _react2.default.createElement(
+                                        'i',
+                                        null,
+                                        'jquery'
+                                    )
+                                )
+                            )
                         ),
                         _react2.default.createElement(
                             'div',
                             { className: 'col-4 sass' },
-                            'SASS'
+                            _react2.default.createElement(
+                                'figure',
+                                { className: 'skill' },
+                                _react2.default.createElement('img', { src: 'dist/images/sass.png', alt: 'sass' }),
+                                _react2.default.createElement(
+                                    'figcaption',
+                                    null,
+                                    _react2.default.createElement(
+                                        'i',
+                                        null,
+                                        'sass'
+                                    )
+                                )
+                            )
                         ),
                         _react2.default.createElement(
                             'div',
                             { className: 'col-4 git' },
-                            'GIT'
+                            _react2.default.createElement(
+                                'figure',
+                                { className: 'skill' },
+                                _react2.default.createElement('img', { src: 'dist/images/git.png', alt: 'git' }),
+                                _react2.default.createElement(
+                                    'figcaption',
+                                    null,
+                                    _react2.default.createElement(
+                                        'i',
+                                        null,
+                                        'git'
+                                    )
+                                )
+                            )
                         )
                     )
                 )
@@ -921,8 +1140,120 @@ var Skills = function (_React$Component8) {
     return Skills;
 }(_react2.default.Component);
 
-var App = function (_React$Component9) {
-    _inherits(App, _React$Component9);
+var Work = function (_React$Component12) {
+    _inherits(Work, _React$Component12);
+
+    function Work() {
+        _classCallCheck(this, Work);
+
+        return _possibleConstructorReturn(this, (Work.__proto__ || Object.getPrototypeOf(Work)).apply(this, arguments));
+    }
+
+    _createClass(Work, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'section',
+                { className: 'work', id: 'port' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'container' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'row' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'col-12 title' },
+                            'My work'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'ghost' },
+                            'portfolio'
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Work;
+}(_react2.default.Component);
+
+var Contact = function (_React$Component13) {
+    _inherits(Contact, _React$Component13);
+
+    function Contact() {
+        _classCallCheck(this, Contact);
+
+        return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).apply(this, arguments));
+    }
+
+    _createClass(Contact, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'section',
+                { className: 'contact', id: 'cont' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'container one' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'row' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'col-12 title' },
+                            'Contact Me'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'row' },
+                        _react2.default.createElement(
+                            'h1',
+                            { className: 'col-12 contactName' },
+                            'Piotr Rawski'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'col-12' },
+                            _react2.default.createElement(
+                                'a',
+                                { href: 'mailto:piotr.rawski@gmail.com' },
+                                _react2.default.createElement('img', { className: 'icon', src: 'dist/images/email.svg' })
+                            ),
+                            _react2.default.createElement(
+                                'a',
+                                { href: 'tel:+48-664-099-212' },
+                                _react2.default.createElement('img', { className: 'icon', src: 'dist/images/phone.svg' })
+                            ),
+                            _react2.default.createElement(
+                                'a',
+                                { href: 'https://google.com' },
+                                _react2.default.createElement('img', { className: 'icon', src: 'dist/images/linkedin.svg' })
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'footer',
+                    { className: 'row' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'col-12' },
+                        'Designed & coded with passion by me.'
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Contact;
+}(_react2.default.Component);
+
+var App = function (_React$Component14) {
+    _inherits(App, _React$Component14);
 
     function App() {
         _classCallCheck(this, App);
@@ -938,7 +1269,9 @@ var App = function (_React$Component9) {
                 null,
                 _react2.default.createElement(ViewOne, null),
                 _react2.default.createElement(ViewTwo, null),
-                _react2.default.createElement(ViewThree, null)
+                _react2.default.createElement(ViewThree, null),
+                _react2.default.createElement(ViewFour, null),
+                _react2.default.createElement(ViewFive, null)
             );
         }
     }]);
