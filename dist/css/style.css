@@ -340,3 +340,11 @@ footer {
   font-weight: 800;
   color: grey;
   opacity: 0.1; }
+
+.slider {
+  height: 300px;
+  width: 300px; }
+
+.slide {
+  width: 200px;
+  height: 200px; }

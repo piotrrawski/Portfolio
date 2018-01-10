@@ -9,6 +9,11 @@ import { Router,
     IndexRoute,
     hashHistory
 } from 'react-router';
+import SlideOne from './Components/SlideOne/';
+import SlideTwo from './Components/SlideTwo/';
+import SlideThree from './Components/SlideThree/';
+import LeftArrow from './Components/LeftArrow/';
+import RightArrow from './Components/RightArrow/';
 
 
 
@@ -221,6 +226,7 @@ class Work extends React.Component {
                    <div className="row">
                        <div className="col-12 title">My work</div>
                        <div className="ghost">portfolio</div>
+                       <Slider/>
                    </div>
                </div>
            </section>
@@ -255,8 +261,52 @@ class Contact extends React.Component {
     }
 }
 
+
+//-----------slider code---------->
+
+class Slider extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            slideCount: 1
+        }
+
+        this.nextSlide = this.nextSlide.bind(this);
+        this.previousSlide = this.previousSlide.bind(this);
+    }
+
+    nextSlide() {
+        this.setState({ slideCount: this.state.slideCount + 1 })
+        console.log(this.state.slideCount)
+    }
+
+    previousSlide() {
+        this.setState({ slideCount: this.state.slideCount - 1 })
+    }
+    render() {
+        return (
+            <div className="slider">
+                { this.state.slideCount === 1 ? <SlideOne /> : null }
+                { this.state.slideCount === 2 ? <SlideTwo /> : null }
+                { this.state.slideCount === 3 ? <SlideThree /> : null }
+
+                <RightArrow nextSlide={this.nextSlide} />
+                <LeftArrow previousSlide={this.previousSlide} />
+            </div>
+        )
+    }
+}
+
+            //------------end slider------------>
+
+
+
+
+
+
 class App extends React.Component {
-    render () {
+    render() {
         return (
             <div>
                 <ViewOne/>
@@ -264,9 +314,10 @@ class App extends React.Component {
                 <ViewThree/>
                 <ViewFour/>
                 <ViewFive/>
+                <Slider/>
             </div>
         )
-}
+    }
 }
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -275,3 +326,5 @@ document.addEventListener('DOMContentLoaded', function(){
         document.getElementById('app')
     );
 });
+
+

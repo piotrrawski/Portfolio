@@ -10,7 +10,9 @@
   },
   "author": "Dariusz Luber",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "react-responsive-carousel": "^3.1.30"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
