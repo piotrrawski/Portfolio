@@ -249,9 +249,9 @@ class Contact extends React.Component {
                     <div className="row">
                         <h1 className="col-12 contactName">Piotr Rawski</h1>
                         <div className="col-12">
-                            <a href="mailto:piotr.rawski@gmail.com"><img className="icon" src="dist/images/email.svg"></img></a>
-                            <a href="tel:+48-664-099-212"><img className="icon" src="dist/images/phone.svg"></img></a>
-                            <a href="https://google.com"><img className="icon" src="dist/images/linkedin.svg"></img></a>
+                            <a href="mailto:piotr.rawski@gmail.com"><img className="icon" src="dist/images/envelope.svg"></img></a>
+                            <a href="tel:+48-664-099-212"><img className="icon" src="dist/images/github-logo.svg"></img></a>
+                            <a href="https://google.com"><img className="icon" src="dist/images/linkedin-sign.svg"></img></a>
                         </div>
                     </div>
                 </div>

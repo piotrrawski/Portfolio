@@ -1245,17 +1245,17 @@ var Contact = function (_React$Component13) {
                             _react2.default.createElement(
                                 'a',
                                 { href: 'mailto:piotr.rawski@gmail.com' },
-                                _react2.default.createElement('img', { className: 'icon', src: 'dist/images/email.svg' })
+                                _react2.default.createElement('img', { className: 'icon', src: 'dist/images/envelope.svg' })
                             ),
                             _react2.default.createElement(
                                 'a',
                                 { href: 'tel:+48-664-099-212' },
-                                _react2.default.createElement('img', { className: 'icon', src: 'dist/images/phone.svg' })
+                                _react2.default.createElement('img', { className: 'icon', src: 'dist/images/github-logo.svg' })
                             ),
                             _react2.default.createElement(
                                 'a',
                                 { href: 'https://google.com' },
-                                _react2.default.createElement('img', { className: 'icon', src: 'dist/images/linkedin.svg' })
+                                _react2.default.createElement('img', { className: 'icon', src: 'dist/images/linkedin-sign.svg' })
                             )
                         )
                     )
