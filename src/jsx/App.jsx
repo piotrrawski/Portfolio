@@ -103,7 +103,7 @@ class Quote extends React.Component {
         return (
             <section className="quote">
                 <div className="row">
-                <div className="col-6">Topping pie powder jelly-o toffee ice cream. <span>Chocolate</span> cake pudding soufflé toffee bear claw.
+                    <div className="col-6">Every great developer you know got there by <span>solving</span> problems they were unqualified to solve until they actually did it.
                 </div>
             </div>
             </section>
@@ -249,9 +249,9 @@ class Contact extends React.Component {
                     <div className="row">
                         <h1 className="col-12 contactName">Piotr Rawski</h1>
                         <div className="col-12">
-                            <a href="mailto:piotr.rawski@gmail.com"><img className="icon" src="dist/images/envelope.svg"></img></a>
-                            <a href="tel:+48-664-099-212"><img className="icon" src="dist/images/github-logo.svg"></img></a>
-                            <a href="https://google.com"><img className="icon" src="dist/images/linkedin-sign.svg"></img></a>
+                            <a href="mailto:piotr.rawski@gmail.com"><img className="icon" src="dist/images/envelope-2.svg"></img></a>
+                            <a href="tel:+48-664-099-212"><img className="icon" src="dist/images/github-logo-2.svg"></img></a>
+                            <a href="https://google.com"><img className="icon" src="dist/images/linkedin-sign-2.svg"></img></a>
                         </div>
                     </div>
                 </div>

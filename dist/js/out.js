@@ -823,13 +823,13 @@ var Quote = function (_React$Component8) {
                     _react2.default.createElement(
                         'div',
                         { className: 'col-6' },
-                        'Topping pie powder jelly-o toffee ice cream. ',
+                        'Every great developer you know got there by ',
                         _react2.default.createElement(
                             'span',
                             null,
-                            'Chocolate'
+                            'solving'
                         ),
-                        ' cake pudding souffl\xE9 toffee bear claw.'
+                        ' problems they were unqualified to solve until they actually did it.'
                     )
                 )
             );
@@ -1245,17 +1245,17 @@ var Contact = function (_React$Component13) {
                             _react2.default.createElement(
                                 'a',
                                 { href: 'mailto:piotr.rawski@gmail.com' },
-                                _react2.default.createElement('img', { className: 'icon', src: 'dist/images/envelope.svg' })
+                                _react2.default.createElement('img', { className: 'icon', src: 'dist/images/envelope-2.svg' })
                             ),
                             _react2.default.createElement(
                                 'a',
                                 { href: 'tel:+48-664-099-212' },
-                                _react2.default.createElement('img', { className: 'icon', src: 'dist/images/github-logo.svg' })
+                                _react2.default.createElement('img', { className: 'icon', src: 'dist/images/github-logo-2.svg' })
                             ),
                             _react2.default.createElement(
                                 'a',
                                 { href: 'https://google.com' },
-                                _react2.default.createElement('img', { className: 'icon', src: 'dist/images/linkedin-sign.svg' })
+                                _react2.default.createElement('img', { className: 'icon', src: 'dist/images/linkedin-sign-2.svg' })
                             )
                         )
                     )

@@ -52,6 +52,7 @@
 
 .background {
   background-image: url("../images/background.jpeg");
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -124,11 +125,12 @@ header {
         opacity: 1; }
 
 .quote {
-  font-size: 3rem;
+  font-size: 2.5rem;
   opacity: 0.9;
   align-self: flex-end;
   padding-left: 10px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  line-height: 150%; }
   .quote span {
     color: #fec010; }
 
@@ -166,7 +168,8 @@ header {
 
 .about {
   color: rgba(31, 31, 31, 0.9);
-  background: rgba(207, 216, 220, 0.8);
+  background: rgba(201, 209, 225, 0.8);
+  background-attachment: fixed;
   height: 100vh;
   font-size: 2rem; }
   .about .name {
@@ -290,7 +293,7 @@ header {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background: rgba(207, 216, 220, 0.8); }
+  background: rgba(201, 209, 225, 0.8); }
   .work a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.6);
@@ -305,12 +308,16 @@ header {
     background: rgba(255, 255, 255, 0.1); }
 
 .fa {
-  color: rgba(0, 0, 0, 0.5); }
+  color: rgba(255, 255, 255, 0.7); }
 
 .slider {
   height: 500px;
   width: 100%;
-  border: 10px solid gray; }
+  border: 10px solid gray;
+  color: white; }
+
+.project {
+  color: rgba(255, 255, 255, 0.7); }
 
 .slide {
   display: flex;
@@ -346,7 +353,8 @@ header {
       .contact .container .row .icon {
         height: 4rem;
         width: 4rem;
-        margin: 1rem 1rem; }
+        margin: 1rem 1rem;
+        opacity: 0.9; }
       .contact .container .row .icon:hover {
         height: 3.5rem;
         width: 3.5rem;
