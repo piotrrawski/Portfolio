@@ -1,5 +1,5 @@
 .about {
-  color: rgba(31,31,31,0.9);
+  color: $font-color;
   background-image: url("../images/pattern.svg") ;
   background-attachment: fixed;
   height: 100vh;
@@ -16,7 +16,7 @@
     flex-direction: column;
     opacity: 0.8;
     span {
-      color: #fec010;
+      color: $supporting-color;
       text-transform: uppercase;
       opacity: 1 !important;
     }

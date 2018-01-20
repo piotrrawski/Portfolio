@@ -64,15 +64,15 @@ header {
       ul a:before {
         left: 0;
         top: 0;
-        border-left: 3px solid #fec010;
-        border-top: 3px solid #fec010;
+        border-left: 3px solid $supporting-color;
+        border-top: 3px solid $supporting-color;
         transform: translate(100%, 50%);
       }
       ul a:after {
         right: 0;
         bottom: 0;
-        border-right: 3px solid #fec010;
-        border-bottom: 3px solid #fec010;
+        border-right: 3px solid $supporting-color;
+        border-bottom: 3px solid $supporting-color;
         transform: translate(-100%, -50%);
       }
       ul a:hover,
