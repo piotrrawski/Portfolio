@@ -29,7 +29,7 @@ module.exports = {
 
             },
             {
-                test: /\.(png|jpg|gif)$/,
+                test: /\.(png|jpg|gif|)$/,
                 exclude: /node_modules/,
                 use: [
                     {

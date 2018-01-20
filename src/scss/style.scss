@@ -23,6 +23,7 @@
 
 header {
   background-color: rgba(255, 255, 255, 0.1);
+  z-index: 22;
   opacity: 0.7;
   //padding: 10px;
   padding-left: 10px;
@@ -46,6 +47,7 @@ letter-spacing: 0.4rem;
     .menu {
       text-transform: uppercase;
       font-size: 1.4rem;
+      z-index: 10;
       //float: right;
       //display: inline;
       //border: solid 1px blue;
@@ -54,6 +56,7 @@ letter-spacing: 0.4rem;
         //justify-content: flex-end;
         //float: right;
         list-style-type: none;
+        z-index: 9;
         //display: inline-block;
         //overflow: hidden;
 
@@ -144,6 +147,7 @@ letter-spacing: 0.4rem;
 }
 
 #cookies {
+  z-index: 11;
   width: 250px;
   //border: solid 1px red;
   background: rgba(255,255,255,0.1);
@@ -157,13 +161,16 @@ letter-spacing: 0.4rem;
   margin: 5px;
   color: rgba(0,0,0,0.7);
   border-radius: 5px;
-  .exit {
+  .cookies-exit {
     border: solid 1px blue;
     position: relative;
     background: rgba(0,100,0,0.9);
     text-align: center;
     line-height: 20px;
     border-radius: 5px;
+  }
+  .cookies-exit:hover{
+    cursor: pointer;
   }
 }
 
@@ -186,9 +193,9 @@ letter-spacing: 0.4rem;
 .about {
   color: rgba(31,31,31,0.9);
   //background: rgba(207, 216, 220, 0.8);
-  background: rgba(201, 209, 225, 0.8);
+  //background: rgba(201, 209, 225, 0.8);
+  background-image: url("../images/pattern.svg") ;
   background-attachment: fixed;
-
   height: 100vh;
   font-size: 2rem;
   //.col-12 {
@@ -234,11 +241,17 @@ opacity: 1 !important;
   }
 }
 
+.skills{
+  //background: rgba(207, 216, 220, 0.8);
+  background-image: url("../images/pattern.svg") ;
+
+  background-attachment: fixed;
+}
 .skills {
   display: flex;
   align-items: center;
   height: 100vh;
-  background: rgba(207, 216, 220, 0.8);
+
 
   .container {
     //border: solid 1px green;
@@ -319,6 +332,8 @@ opacity: 1 !important;
 //okragle skillsy
 
 .skill {
+  background-image: url("../images/pattern.svg") ;
+background-attachment: fixed;
   position: relative;
   display: inline-block;
   margin: 100px;
@@ -415,6 +430,8 @@ opacity: 1 !important;
 
 
 .work {
+  background-image: url("../images/pattern.svg") ;
+  background-attachment: fixed;
   a {
     text-decoration: none;
     color: rgba(0,0,0,0.6);
@@ -424,7 +441,7 @@ opacity: 1 !important;
   flex-direction: column;
   height: 100vh;
   //background: rgba(207, 216, 220, 0.8);
-  background: rgba(201, 209, 225, 0.8);
+  //background: rgba(201, 209, 225, 0.8);
 
   //border: solid 1px yellow;
   .container {
@@ -461,15 +478,15 @@ opacity: 1 !important;
 
 //<-------------------slider css---------------->
 .slider {
-  height: 500px;
+  height: 450px;
   width: 100%;
   //border: 1px solid red;
   //box-shadow: 5px 5px 50px 0px rgba(0,0,0,0.5);
-  border: 10px solid gray;
+  //border: 10px solid gray;
   color: white;
 }
 .project{
-  color: rgba(255,255,255,0.7);
+  color: rgba(255,255,255,1);
 }
 .slide {
   display: flex;
@@ -477,8 +494,12 @@ opacity: 1 !important;
   align-items: center;
   width: 100%;
   height: 100%;
+  opacity: 0.5;
   //border: solid 1px blue;
 
+}
+.slide:hover{
+  opacity: 1;
 }
 
 .fade {
@@ -494,16 +515,18 @@ opacity: 1 !important;
 //}
 
 @keyframes fade {
-  0% {opacity: .2}
+  0% {opacity: .1}
 
-  100% {opacity: 1}
+  100% {opacity: .5}
 }
 //<---------------end slider------------->
 
 
 .contact {
   height: 100vh;
-  background: rgba(207, 216, 220, 0.8);
+  //background: rgba(207, 216, 220, 0.8);
+  background-image: url("../images/pattern.svg") ;
+  background-attachment: fixed;
   //display: flex;
   //color: white;
   .container {

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 const SlideTwo= (props) => {
 
     let background = {
-        backgroundImage: 'url(./dist/images/s2.jpeg)',
+        backgroundImage: 'url(./dist/images/s6.jpeg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center'
     }
