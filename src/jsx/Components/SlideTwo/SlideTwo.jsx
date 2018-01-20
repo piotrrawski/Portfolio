@@ -3,12 +3,15 @@ import React, { Component } from 'react';
 const SlideTwo= (props) => {
 
     let background = {
-        backgroundImage: 'url(./dist/images/js.png)',
+        backgroundImage: 'url(./dist/images/s2.jpeg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center'
     }
 
-    return <div style={background} className="slide"></div>
+    return <a target="blank" href="https://google.com">
+        <div style={background} className="slide fade">
+            <div className="project">project two</div>
+        </div></a>
 }
 
 

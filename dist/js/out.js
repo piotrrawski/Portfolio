@@ -1045,7 +1045,7 @@ var Skills = function (_React$Component11) {
                             _react2.default.createElement(
                                 'figure',
                                 { className: 'skill' },
-                                _react2.default.createElement('img', { src: 'dist/images/jss.jpg', alt: 'js' }),
+                                _react2.default.createElement('img', { src: 'dist/images/js.png', alt: 'js' }),
                                 _react2.default.createElement(
                                     'figcaption',
                                     null,
@@ -1185,13 +1185,16 @@ var Work = function (_React$Component12) {
                             'div',
                             { className: 'col-12 title' },
                             'My work'
-                        ),
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'row' },
                         _react2.default.createElement(
                             'div',
-                            { className: 'ghost' },
-                            'portfolio'
-                        ),
-                        _react2.default.createElement(Slider, null)
+                            { className: 'col-12' },
+                            _react2.default.createElement(Slider, null)
+                        )
                     )
                 )
             );
@@ -1289,6 +1292,7 @@ var Slider = function (_React$Component14) {
 
         _this14.nextSlide = _this14.nextSlide.bind(_this14);
         _this14.previousSlide = _this14.previousSlide.bind(_this14);
+
         return _this14;
     }
 
@@ -1296,24 +1300,39 @@ var Slider = function (_React$Component14) {
         key: 'nextSlide',
         value: function nextSlide() {
             this.setState({ slideCount: this.state.slideCount + 1 });
-            console.log(this.state.slideCount);
+            if (this.state.slideCount > 2) {
+                console.log('+3');
+                this.setState({ slideCount: 1 });
+            }
         }
     }, {
         key: 'previousSlide',
         value: function previousSlide() {
             this.setState({ slideCount: this.state.slideCount - 1 });
+            if (this.state.slideCount < 2) {
+                console.log('+3');
+                this.setState({ slideCount: 3 });
+            }
         }
+    }, {
+        key: 'checked',
+        value: function checked() {}
     }, {
         key: 'render',
         value: function render() {
+
             return _react2.default.createElement(
                 'div',
                 { className: 'slider' },
                 this.state.slideCount === 1 ? _react2.default.createElement(_SlideOne2.default, null) : null,
                 this.state.slideCount === 2 ? _react2.default.createElement(_SlideTwo2.default, null) : null,
                 this.state.slideCount === 3 ? _react2.default.createElement(_SlideThree2.default, null) : null,
-                _react2.default.createElement(_RightArrow2.default, { nextSlide: this.nextSlide }),
-                _react2.default.createElement(_LeftArrow2.default, { previousSlide: this.previousSlide })
+                _react2.default.createElement(
+                    'div',
+                    { className: 'arrows' },
+                    _react2.default.createElement(_LeftArrow2.default, { previousSlide: this.previousSlide }),
+                    _react2.default.createElement(_RightArrow2.default, { nextSlide: this.nextSlide })
+                )
             );
         }
     }]);
@@ -1343,8 +1362,7 @@ var App = function (_React$Component15) {
                 _react2.default.createElement(ViewTwo, null),
                 _react2.default.createElement(ViewThree, null),
                 _react2.default.createElement(ViewFour, null),
-                _react2.default.createElement(ViewFive, null),
-                _react2.default.createElement(Slider, null)
+                _react2.default.createElement(ViewFive, null)
             );
         }
     }]);
@@ -28325,12 +28343,24 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var SlideThree = function SlideThree(props) {
 
     var background = {
-        backgroundImage: 'url(./dist/images/css.png)',
+        backgroundImage: 'url(./dist/images/s3.jpeg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center'
     };
 
-    return _react2.default.createElement('div', { style: background, className: 'slide' });
+    return _react2.default.createElement(
+        'a',
+        { target: 'blank', href: 'https://google.com' },
+        _react2.default.createElement(
+            'div',
+            { style: background, className: 'slide fade' },
+            _react2.default.createElement(
+                'div',
+                { className: 'project' },
+                'project three'
+            )
+        )
+    );
 };
 exports.default = SlideThree;
 
@@ -28354,12 +28384,24 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var SlideTwo = function SlideTwo(props) {
 
     var background = {
-        backgroundImage: 'url(./dist/images/js.png)',
+        backgroundImage: 'url(./dist/images/s2.jpeg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center'
     };
 
-    return _react2.default.createElement('div', { style: background, className: 'slide' });
+    return _react2.default.createElement(
+        'a',
+        { target: 'blank', href: 'https://google.com' },
+        _react2.default.createElement(
+            'div',
+            { style: background, className: 'slide fade' },
+            _react2.default.createElement(
+                'div',
+                { className: 'project' },
+                'project two'
+            )
+        )
+    );
 };
 
 exports.default = SlideTwo;
@@ -28384,12 +28426,24 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var SlideOne = function SlideOne(props) {
 
     var background = {
-        backgroundImage: 'url("./dist/images/react.png")',
+        backgroundImage: 'url("./dist/images/s1.jpeg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center'
     };
 
-    return _react2.default.createElement('div', { style: background, className: 'slide' });
+    return _react2.default.createElement(
+        'a',
+        { target: 'blank', href: 'https://google.com' },
+        _react2.default.createElement(
+            'div',
+            { style: background, className: 'slide fade' },
+            _react2.default.createElement(
+                'div',
+                { className: 'project' },
+                'project one'
+            )
+        )
+    );
 };
 
 exports.default = SlideOne;
@@ -28417,8 +28471,8 @@ var LeftArrow = function LeftArrow(props) {
         { className: "backArrow" },
         _react2.default.createElement(
             "div",
-            { onClick: props.previousSlide, className: "nextArrow" },
-            _react2.default.createElement("i", { className: "fa fa-arrow-right fa-2x", "aria-hidden": "true" })
+            { onClick: props.previousSlide, className: "backArrow" },
+            _react2.default.createElement("i", { className: "fa fa-arrow-left fa-2x", "aria-hidden": "true" })
         )
     );
 };
@@ -28448,7 +28502,7 @@ var RightArrow = function RightArrow(props) {
         { className: "nextArrow" },
         _react2.default.createElement(
             "div",
-            { onClick: props.nextSlide, className: "nextArrow" },
+            { onClick: props.nextSlide, className: "nextArrow fade" },
             _react2.default.createElement("i", { className: "fa fa-arrow-right fa-2x", "aria-hidden": "true" })
         )
     );

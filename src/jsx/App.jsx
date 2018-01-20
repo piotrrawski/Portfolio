@@ -191,7 +191,7 @@ class Skills extends React.Component {
                         </figure></div>
                     </div>
                     <div className="row">
-                        <div className="col-4 js"><figure className="skill"><img src="dist/images/jss.jpg" alt="js" />
+                        <div className="col-4 js"><figure className="skill"><img src="dist/images/js.png" alt="js" />
                             <figcaption><i>javascript</i></figcaption>
                         </figure></div>
                         <div className="col-4 react"><figure className="skill"><img src="dist/images/react.png" alt="react" />
@@ -225,8 +225,12 @@ class Work extends React.Component {
                <div className="container">
                    <div className="row">
                        <div className="col-12 title">My work</div>
-                       <div className="ghost">portfolio</div>
-                       <Slider/>
+                   </div>
+                   <div className="row">
+                       <div className="col-12">
+                           <Slider/>
+
+                       </div>
                    </div>
                </div>
            </section>
@@ -274,25 +278,44 @@ class Slider extends React.Component {
 
         this.nextSlide = this.nextSlide.bind(this);
         this.previousSlide = this.previousSlide.bind(this);
+
     }
 
     nextSlide() {
         this.setState({ slideCount: this.state.slideCount + 1 })
-        console.log(this.state.slideCount)
-    }
+        if (this.state.slideCount > 2) {
+            console.log('+3')
+            this.setState({slideCount: 1})
+        }
+        }
+
 
     previousSlide() {
         this.setState({ slideCount: this.state.slideCount - 1 })
+        if (this.state.slideCount < 2) {
+            console.log('+3')
+            this.setState({slideCount: 3})
+        }
     }
+
+checked() {
+
+
+}
+
     render() {
+
         return (
             <div className="slider">
                 { this.state.slideCount === 1 ? <SlideOne /> : null }
                 { this.state.slideCount === 2 ? <SlideTwo /> : null }
                 { this.state.slideCount === 3 ? <SlideThree /> : null }
 
-                <RightArrow nextSlide={this.nextSlide} />
-                <LeftArrow previousSlide={this.previousSlide} />
+                <div className='arrows'>
+                    <LeftArrow previousSlide={this.previousSlide} />
+
+                    <RightArrow nextSlide={this.nextSlide} />
+                </div>
             </div>
         )
     }
@@ -314,7 +337,6 @@ class App extends React.Component {
                 <ViewThree/>
                 <ViewFour/>
                 <ViewFive/>
-                <Slider/>
             </div>
         )
     }

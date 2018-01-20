@@ -409,10 +409,85 @@ opacity: 1 !important;
 
 
 .work {
+  a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+    font-size: 3rem;
+  }
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   background: rgba(207, 216, 220, 0.8);
+  //border: solid 1px yellow;
+  .container {
+    //border: solid 1px green;
+    .title {
+      //border: solid 1px pink;
+    }
+  }
 }
 
+.arrows{
+  position: relative;
+  top: -50%;
+  display: flex;
+  justify-content: space-between;
+  .nextArrow:hover {
+    background: rgba(255,255,255,0.1);
+  }
+}
+.fa {
+  color: rgba(0,0,0,0.5);
+}
+//.nextArrow {
+//position: relative;
+//  top: -50%;
+//  //right: -50vw;
+//  left: 30px;
+//}
+//
+//.backArrow {
+//  position: relative;
+//  top: -50%;
+//}
+
+//<-------------------slider css---------------->
+.slider {
+  height: 500px;
+  width: 100%;
+  //border: 1px solid red;
+  //box-shadow: 5px 5px 50px 0px rgba(0,0,0,0.5);
+  border: 10px solid gray;
+}
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  //border: solid 1px blue;
+
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+
+}
+
+//@keyframes fade {
+//  0% {opacity: .2; transform: translate(105vw)}
+//  //50% {opacity: .8; transform: translate(-25px)}
+//  100% {opacity: 1}; transform: translate(0px)
+//}
+
+@keyframes fade {
+  0% {opacity: .2}
+
+  100% {opacity: 1}
+}
+//<---------------end slider------------->
 
 
 .contact {
@@ -485,15 +560,7 @@ footer {
   font-weight: 800;
   color: grey;
   opacity: 0.1;
+  border: solid 1px red;
 }
 
-//<-------------------slider css---------------->
-.slider {
-  height: 300px;
-  width: 300px;
-}
-.slide {
-  width: 200px;
-  height: 200px;
-}
-//<---------------end slider------------->
+
