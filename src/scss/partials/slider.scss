@@ -1,0 +1,46 @@
+.arrows{
+  position: relative;
+  top: -50%;
+  display: flex;
+  justify-content: space-between;
+  .nextArrow:hover {
+    background: rgba(255,255,255,0.1);
+  }
+}
+
+
+.fa {
+  color: rgba(255,255,255,0.7);
+}
+
+
+.slider {
+  height: 450px;
+  width: 100%;
+  color: white;
+}
+.project{
+  color: rgba(255,255,255,1);
+}
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+.slide:hover{
+  opacity: 1;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  0% {opacity: .1}
+
+  100% {opacity: .5}
+}

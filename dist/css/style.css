@@ -160,18 +160,6 @@ header {
   #cookies .cookies-exit:hover {
     cursor: pointer; }
 
-.title {
-  text-align: center;
-  margin: 75px 0;
-  font-weight: 400;
-  opacity: 0.8;
-  text-decoration: underline;
-  text-decoration-color: #fec010;
-  font-size: 4rem;
-  letter-spacing: 1rem;
-  text-transform: uppercase;
-  color: rgba(31, 31, 31, 0.9); }
-
 .about {
   color: rgba(31, 31, 31, 0.9);
   background-image: url("../images/pattern.svg");
@@ -206,9 +194,7 @@ header {
 
 .skills {
   background-image: url("../images/pattern.svg");
-  background-attachment: fixed; }
-
-.skills {
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   height: 100vh; }
@@ -376,12 +362,12 @@ header {
         width: 3.5rem;
         opacity: 0.8;
         filter: drop-shadow(5px 5px 30px white); }
-    .contact .container .col-12 {
-      display: flex;
-      justify-content: center; }
-      .contact .container .col-12 a {
-        text-decoration: none;
-        color: rgba(31, 31, 31, 0.9); }
+      .contact .container .row .col-12 {
+        display: flex;
+        justify-content: center; }
+        .contact .container .row .col-12 a {
+          text-decoration: none;
+          color: rgba(31, 31, 31, 0.9); }
 
 footer {
   height: 30vh;
@@ -393,14 +379,14 @@ footer {
   footer div {
     background: rgba(255, 255, 255, 0.2); }
 
-.ghost {
-  position: relative;
-  font-size: 10rem;
-  text-transform: uppercase;
-  letter-spacing: 1rem;
+.title {
   text-align: center;
-  top: -15rem;
-  font-weight: 800;
-  color: grey;
-  opacity: 0.1;
-  border: solid 1px red; }
+  margin: 75px 0;
+  font-weight: 400;
+  opacity: 0.8;
+  text-decoration: underline;
+  text-decoration-color: #fec010;
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  color: rgba(31, 31, 31, 0.9); }

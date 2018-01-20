@@ -1,0 +1,108 @@
+.skills {
+  background-image: url("../images/pattern.svg") ;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  .container {
+    height: 100vh;
+  }
+  .col-4 {
+    height: 18vh;
+    width: (100%/3);
+    margin-bottom: 45px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+//round skills
+
+.skill {
+  background-image: url("../images/pattern.svg") ;
+  background-attachment: fixed;
+  position: relative;
+  display: inline-block;
+  margin: 100px;
+  max-width: 190px;
+  width: 100%;
+  color: #bbb;
+  font-size: 16px;
+  box-shadow: none !important;
+  transform: translateZ(0);
+}
+
+.skill *,
+.skill:before,
+.skill:after {
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+}
+
+.skill:before,
+.skill:after {
+  box-sizing: border-box;
+  border-radius: 50%;
+  content: '';
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: -1;
+  border: 2px solid #bbb;
+  border-color: transparent #bbb;
+}
+
+.skill img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.skill figcaption {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+}
+
+.skill i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  z-index: 1;
+}
+
+.skill:hover figcaption,
+.skill.hover figcaption {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.skill:hover:before,
+.skill.hover:before,
+.skill:hover:after,
+.skill.hover:after {
+  border-width: 10px;
+}
+
+.skill:hover:before,
+.skill.hover:before {
+  transform: rotate(45deg);
+}
+
+.skill:hover:after,
+.skill.hover:after {
+  transform: rotate(-45deg);
+}

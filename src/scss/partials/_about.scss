@@ -1,0 +1,38 @@
+.about {
+  color: rgba(31,31,31,0.9);
+  background-image: url("../images/pattern.svg") ;
+  background-attachment: fixed;
+  height: 100vh;
+  font-size: 2rem;
+  .name {
+    letter-spacing: 0.4rem;
+  }
+  .aboTxt{
+    letter-spacing: 0.2rem;
+  }
+  .col-6 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.8;
+    span {
+      color: #fec010;
+      text-transform: uppercase;
+      opacity: 1 !important;
+    }
+  }
+}
+.photo {
+  .col-12 {
+    opacity: 1 !important;
+  }
+  .myphoto {
+    width: 200px !important;
+    height: 200px;
+    background-image: url("../images/me.jpg");
+    background-size: cover;
+    border-radius: 100%;
+    box-shadow: 5px 5px 50px 0px rgba(0,0,0,0.5);
+    margin-top: 5rem;
+  }
+}
