@@ -68,64 +68,67 @@ header {
   position: fixed;
   width: 100%;
   letter-spacing: 0.4rem; }
-  header .row {
-    display: flex; }
-    header .row .logo {
-      color: white;
-      font-family: 'Lato', sans-serif;
-      font-size: 2rem;
-      float: left;
-      align-self: center;
-      text-transform: uppercase; }
-    header .row .menu {
-      text-transform: uppercase;
-      font-size: 1.4rem;
-      z-index: 10; }
-      header .row .menu ul {
-        list-style-type: none;
-        z-index: 9; }
-        header .row .menu ul ul * {
-          box-sizing: border-box;
-          transition: all 0.35s ease; }
-        header .row .menu ul li a {
-          color: white;
-          padding-left: 10px;
-          padding-right: 10px;
-          text-decoration: none;
-          float: right;
-          display: block;
-          padding-top: 20px;
-          padding-bottom: 20px;
-          position: relative; }
-      header .row .menu ul a:before,
-      header .row .menu ul a:after {
-        height: 14px;
-        width: 14px;
-        position: absolute;
-        content: '';
-        transition: all 0.35s ease;
-        opacity: 0; }
-      header .row .menu ul a:before {
-        left: 0;
-        top: 0;
-        border-left: 3px solid #fec010;
-        border-top: 3px solid #fec010;
-        transform: translate(100%, 50%); }
-      header .row .menu ul a:after {
-        right: 0;
-        bottom: 0;
-        border-right: 3px solid #fec010;
-        border-bottom: 3px solid #fec010;
-        transform: translate(-100%, -50%); }
-      header .row .menu ul a:hover,
-      header .row .menu ul .current a {
-        color: #ffffff; }
-      header .row .menu ul a:hover:before,
-      header .row .menu ul .current a:before,
-      header .row .menu ul a:hover:after,
-      header .row .menu ul .current a:after {
-        transform: translate(0%, 0%);
-        opacity: 1; }
+  header .row .col-6 {
+    display: flex;
+    flex-direction: column; }
+  header .row .logo {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 4rem; }
+  header .row .menu {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    z-index: 10;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end; }
+    header .row .menu ul {
+      list-style-type: none;
+      z-index: 9; }
+      header .row .menu ul ul * {
+        box-sizing: border-box;
+        transition: all 0.35s ease; }
+      header .row .menu ul li a {
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-decoration: none;
+        float: right;
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: relative; }
+    header .row .menu ul a:before,
+    header .row .menu ul a:after {
+      height: 14px;
+      width: 14px;
+      position: absolute;
+      content: '';
+      transition: all 0.35s ease;
+      opacity: 0; }
+    header .row .menu ul a:before {
+      left: 0;
+      top: 0;
+      border-left: 3px solid #fec010;
+      border-top: 3px solid #fec010;
+      transform: translate(100%, 50%); }
+    header .row .menu ul a:after {
+      right: 0;
+      bottom: 0;
+      border-right: 3px solid #fec010;
+      border-bottom: 3px solid #fec010;
+      transform: translate(-100%, -50%); }
+    header .row .menu ul a:hover,
+    header .row .menu ul .current a {
+      color: #ffffff; }
+    header .row .menu ul a:hover:before,
+    header .row .menu ul .current a:before,
+    header .row .menu ul a:hover:after,
+    header .row .menu ul .current a:after {
+      transform: translate(0%, 0%);
+      opacity: 1; }
 
 .quote {
   font-size: 2.5rem;

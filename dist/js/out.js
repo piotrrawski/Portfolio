@@ -27856,26 +27856,8 @@ var Menu = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                         "a",
-                        { href: "#cont" },
-                        "Contact"
-                    )
-                ),
-                _react2.default.createElement(
-                    "li",
-                    null,
-                    _react2.default.createElement(
-                        "a",
-                        { href: "#port" },
-                        "My work"
-                    )
-                ),
-                _react2.default.createElement(
-                    "li",
-                    null,
-                    _react2.default.createElement(
-                        "a",
-                        { href: "#skillss" },
-                        "Skills"
+                        { href: "#" },
+                        "Home"
                     )
                 ),
                 _react2.default.createElement(
@@ -27892,8 +27874,26 @@ var Menu = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                         "a",
-                        { href: "#" },
-                        "Home"
+                        { href: "#skillss" },
+                        "Skills"
+                    )
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    _react2.default.createElement(
+                        "a",
+                        { href: "#port" },
+                        "My\xA0work"
+                    )
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    _react2.default.createElement(
+                        "a",
+                        { href: "#cont" },
+                        "Contact"
                     )
                 )
             );
