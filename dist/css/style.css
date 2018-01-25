@@ -229,7 +229,7 @@ header {
 .skill:before,
 .skill:after {
   box-sizing: border-box;
-  transition: all 0.2s linear; }
+  transition: all 0.5s linear; }
 
 .skill:before,
 .skill:after {
@@ -242,8 +242,8 @@ header {
   left: 0px;
   right: 0px;
   z-index: -1;
-  border: 2px solid #bbb;
-  border-color: transparent #bbb; }
+  border: 2px solid white;
+  border-color: transparent white; }
 
 .skill img {
   max-width: 100%;
