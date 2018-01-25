@@ -39,9 +39,13 @@ module.exports = {
                 ]
             }
         ]
+
     },
     plugins: [
         new ExtractTextPlugin('./dist/css/style.css')
 
     ]
+
+
+
 };
