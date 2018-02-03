@@ -8,7 +8,7 @@ class Contact extends React.Component {
                     <div className="row">
                         <div className="col-12 title">Contact Me</div>
                     </div>
-                    <div className="row">
+                    <div className="row contactInfo">
                         <h1 className="col-12 contactName">Piotr Rawski</h1>
                         <div className="col-12">
                             <a href="mailto:piotr.rawski@gmail.com"><img className="icon" src="dist/images/envelope-2.svg"></img></a>

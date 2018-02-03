@@ -1,21 +1,27 @@
 .contact {
-  display: none;
-
   height: 100vh;
   background-image: url("../images/pattern.svg") ;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   .container {
-    height: 70vh;
-    .row {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 
       .contactName {
         margin-top: 5rem;
         margin-bottom: 5rem;
         letter-spacing: 0.5rem;
         color: $font-color;
+        text-transform: uppercase;
+      }
+
+      .contactInfo {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
       }
 
       .icon {
@@ -41,4 +47,3 @@
       }
     }
   }
-}

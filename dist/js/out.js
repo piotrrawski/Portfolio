@@ -28877,7 +28877,7 @@ var Contact = function (_React$Component) {
                     ),
                     _react2.default.createElement(
                         "div",
-                        { className: "row" },
+                        { className: "row contactInfo" },
                         _react2.default.createElement(
                             "h1",
                             { className: "col-12 contactName" },

@@ -199,6 +199,7 @@ header {
     cursor: pointer; }
 
 .about {
+  display: none;
   color: rgba(31, 31, 31, 0.9);
   background-image: url("../images/pattern.svg");
   background-attachment: fixed;
@@ -374,7 +375,6 @@ header {
   display: none;
   background-image: url("../images/pattern.svg");
   background-attachment: fixed;
-  display: flex;
   flex-direction: column;
   height: 100vh; }
   .work a {
@@ -423,59 +423,61 @@ header {
     opacity: .5; } }
 
 .contact {
-  display: none;
   height: 100vh;
   background-image: url("../images/pattern.svg");
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
   .contact .container {
-    height: 70vh; }
-    .contact .container .row {
+    height: 100%;
+    display: flex;
+    flex-direction: column; }
+    .contact .container .contactName {
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+      letter-spacing: 0.5rem;
+      color: rgba(31, 31, 31, 0.9);
+      text-transform: uppercase; }
+    .contact .container .contactInfo {
       display: flex;
       flex-direction: column;
-      align-items: center; }
-      .contact .container .row .contactName {
-        margin-top: 5rem;
-        margin-bottom: 5rem;
-        letter-spacing: 0.5rem;
+      height: 100%; }
+    .contact .container .icon {
+      height: 4rem;
+      width: 4rem;
+      margin: 1rem 1rem;
+      opacity: 0.9; }
+    .contact .container .icon:hover {
+      height: 3.5rem;
+      width: 3.5rem;
+      opacity: 0.8;
+      filter: drop-shadow(5px 5px 30px white); }
+    .contact .container .col-12 {
+      display: flex;
+      justify-content: center; }
+      .contact .container .col-12 a {
+        text-decoration: none;
         color: rgba(31, 31, 31, 0.9); }
-      .contact .container .row .icon {
-        height: 4rem;
-        width: 4rem;
-        margin: 1rem 1rem;
-        opacity: 0.9; }
-      .contact .container .row .icon:hover {
-        height: 3.5rem;
-        width: 3.5rem;
-        opacity: 0.8;
-        filter: drop-shadow(5px 5px 30px white); }
-      .contact .container .row .col-12 {
-        display: flex;
-        justify-content: center; }
-        .contact .container .row .col-12 a {
-          text-decoration: none;
-          color: rgba(31, 31, 31, 0.9); }
 
 footer {
-  height: 30vh;
   color: rgba(31, 31, 31, 0.9);
-  display: flex;
-  align-items: flex-end;
-  padding-bottom: 5px;
   text-align: center; }
   footer div {
     background: rgba(255, 255, 255, 0.2); }
 
 .title {
   text-align: center;
-  padding: 2rem 0;
+  padding: 3rem 0;
   font-weight: 400;
   opacity: 0.8;
   text-decoration: underline;
   text-decoration-color: #fec010;
-  font-size: 4rem;
+  font-size: 2rem;
   letter-spacing: 1rem;
   text-transform: uppercase;
   color: rgba(31, 31, 31, 0.9); }
   @media (min-width: 800px) {
     .title {
-      padding: 75px 0; } }
+      padding: 75px 0;
+      font-size: 4rem; } }
