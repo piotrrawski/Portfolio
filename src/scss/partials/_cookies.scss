@@ -1,23 +1,24 @@
 #cookies {
-  z-index: 11;
-  width: 250px;
-  background: rgba(255,255,255,0.1);
-  position: fixed;
-  top: 90vh;
-  left: 80vw;
-  display: flex;
-  align-content: center;
-  justify-content: flex-end;
-  margin: 5px;
-  color: rgba(0,0,0,0.7);
-  border-radius: 5px;
-  .cookies-exit {
-    border: solid 1px blue;
-    position: relative;
-    background: rgba(0,100,0,0.9);
-    text-align: center;
-    line-height: 20px;
+  display: none;
+  @media(min-width: 800px) {
+    z-index: 11;
+    background: rgba(255, 255, 255, 0.1);
+    position: fixed;
+    top: 90vh;
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    margin: 5px;
+    color: rgba(0, 0, 0, 0.7);
     border-radius: 5px;
+    .cookies-exit {
+      border: solid 1px blue;
+      position: relative;
+      background: rgba(0, 100, 0, 0.9);
+      text-align: center;
+      line-height: 20px;
+      border-radius: 5px;
+    }
   }
   .cookies-exit:hover{
     cursor: pointer;

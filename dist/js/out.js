@@ -27646,9 +27646,19 @@ var Header = function (_React$Component) {
     _inherits(Header, _React$Component);
 
     function Header() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
         _classCallCheck(this, Header);
 
-        return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Header.__proto__ || Object.getPrototypeOf(Header)).call.apply(_ref, [this].concat(args))), _this), _this.handleClick = function () {
+            console.log('click');
+        }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
     _createClass(Header, [{
@@ -27669,6 +27679,12 @@ var Header = function (_React$Component) {
                         'div',
                         { className: 'col-6 menu' },
                         _react2.default.createElement(_Menu2.default, null)
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'col-12 hamburger' },
+                        'Piotr Rawski',
+                        _react2.default.createElement('i', { className: 'fa fa-bars', onClick: this.handleClick })
                     )
                 )
             );
@@ -28014,7 +28030,7 @@ var About = function (_React$Component) {
                     ),
                     _react2.default.createElement(
                         "div",
-                        { className: "row" },
+                        { className: "row namePart" },
                         _react2.default.createElement(
                             "div",
                             { className: "col-6 name" },
@@ -28025,7 +28041,7 @@ var About = function (_React$Component) {
                                 _react2.default.createElement(
                                     "span",
                                     null,
-                                    "Piotr Rawski"
+                                    "Piotr\xA0Rawski"
                                 )
                             ),
                             _react2.default.createElement(

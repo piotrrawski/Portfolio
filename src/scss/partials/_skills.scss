@@ -1,4 +1,6 @@
 .skills {
+  display: none;
+
   background-image: url("../images/pattern.svg") ;
   background-attachment: fixed;
   display: flex;
@@ -18,9 +20,14 @@
   }
 }
 
+#skillss{
+  display: none;
+}
 //round skills
 
 .skill {
+  display: none;
+
   background-image: url("../images/pattern.svg") ;
   background-attachment: fixed;
   position: relative;
@@ -37,12 +44,17 @@
 .skill *,
 .skill:before,
 .skill:after {
+  display: none;
+
+
   box-sizing: border-box;
   transition: all 0.5s linear;
 }
 
 .skill:before,
 .skill:after {
+  display: none;
+
   box-sizing: border-box;
   border-radius: 50%;
   content: '';
@@ -57,6 +69,8 @@
 }
 
 .skill img {
+  display: none;
+
   max-width: 100%;
   backface-visibility: hidden;
   vertical-align: top;
@@ -65,6 +79,8 @@
 }
 
 .skill figcaption {
+  display: none;
+
   position: absolute;
   top: 5px;
   bottom: 5px;
@@ -76,6 +92,8 @@
 }
 
 .skill i {
+  display: none;
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -86,6 +104,8 @@
 
 .skill:hover figcaption,
 .skill.hover figcaption {
+  display: none;
+
   opacity: 1;
   transform: translateX(0);
 }
@@ -94,15 +114,21 @@
 .skill.hover:before,
 .skill:hover:after,
 .skill.hover:after {
+  display: none;
+
   border-width: 10px;
 }
 
 .skill:hover:before,
 .skill.hover:before {
+  display: none;
+
   transform: rotate(45deg);
 }
 
 .skill:hover:after,
 .skill.hover:after {
+  display: none;
+
   transform: rotate(-45deg);
 }

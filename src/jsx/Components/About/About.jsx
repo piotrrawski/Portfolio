@@ -8,9 +8,9 @@ class About extends React.Component {
                     <div className="row">
                         <div className="col-12 title">Who am I?</div>
                     </div>
-                    <div className="row">
+                    <div className="row namePart">
                         <div className="col-6 name">
-                            <div>Hello, I'm&nbsp; <span>Piotr Rawski</span></div>
+                            <div>Hello, I'm&nbsp; <span>Piotr&nbsp;Rawski</span></div>
                             <div className="row photo">
                                 <div className="col-12">
                                     <div className="myphoto"></div>

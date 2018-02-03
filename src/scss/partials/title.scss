@@ -1,6 +1,8 @@
-.title{
+.title {
+  //display: none !important;
+
   text-align: center;
-  margin: 75px 0;
+  padding: 2rem 0;
   font-weight: 400;
   opacity: 0.8;
   text-decoration: underline;
@@ -9,4 +11,7 @@
   letter-spacing: 1rem;
   text-transform: uppercase;
   color: $font-color;
+  @media (min-width: 800px) {
+    padding: 75px 0;
+  }
 }
