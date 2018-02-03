@@ -19,7 +19,8 @@ class About extends React.Component {
                         </div>
                         <div className="col-6 aboTxt">
                             Tootsie roll bonbon bear claw pie. Tiramisu soufflé candy wafer lemon drops. Lollipop cookie dessert oat cake sugar plum powder muffin muffin sugar plum. Chupa chups chocolate bar brownie halvah candy lemon drops icing.
-                            Cookie candy gingerbread cheesecake. Icing caramels jelly-o bonbon jelly-o jelly-o lollipop bear claw. Pie bonbon tiramisu tart brownie.</div>
+                            Cookie candy gingerbread cheesecake. Icing caramels jelly-o bonbon jelly-o jelly-o lollipop bear claw. Pie bonbon tiramisu tart brownie.
+                        </div>
                     </div>
                 </div>
             </section>

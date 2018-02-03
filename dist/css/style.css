@@ -199,7 +199,6 @@ header {
     cursor: pointer; }
 
 .about {
-  display: none;
   color: rgba(31, 31, 31, 0.9);
   background-image: url("../images/pattern.svg");
   background-attachment: fixed;
@@ -211,25 +210,36 @@ header {
   .about .container {
     height: 100%;
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    justify-content: space-between; }
   .about .name {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     font-size: 2rem;
     text-align: center;
-    letter-spacing: 0.4rem;
-    height: 50%; }
+    letter-spacing: 0.4rem; }
   .about .aboTxt {
-    height: 50%;
     letter-spacing: 0.2rem;
-    text-align: center;
+    text-align: justify;
     line-height: 150%;
     align-self: flex-end;
     overflow: scroll; }
+    @media (min-width: 700px) {
+      .about .aboTxt {
+        font-size: 1.5rem;
+        line-height: 200%; } }
+    @media (min-width: 800px) {
+      .about .aboTxt {
+        overflow: visible;
+        line-height: normal;
+        text-align: justify;
+        font-size: 2rem; } }
   .about .col-6 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     opacity: 0.8; }
     .about .col-6 span {
       color: #fec010;
@@ -251,7 +261,7 @@ header {
   border-radius: 100%;
   box-shadow: 5px 5px 50px 0px rgba(0, 0, 0, 0.5);
   align-self: center; }
-  @media (min-width: 800px) {
+  @media (min-width: 700px) {
     .photo .myphoto {
       margin-top: 5rem;
       width: 200px !important;
@@ -260,8 +270,12 @@ header {
 .namePart {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 70%; }
+  justify-content: space-around;
+  align-items: center;
+  height: 100%; }
+  @media (min-width: 800px) {
+    .namePart {
+      display: block; } }
 
 .skills {
   display: none;
