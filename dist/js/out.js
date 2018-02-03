@@ -28568,15 +28568,11 @@ var Slider = function (_React$Component) {
             return _react2.default.createElement(
                 'div',
                 { className: 'slider' },
+                _react2.default.createElement(_LeftArrow2.default, { previousSlide: this.previousSlide }),
                 this.state.slideCount === 1 ? _react2.default.createElement(_SlideOne2.default, null) : null,
                 this.state.slideCount === 2 ? _react2.default.createElement(_SlideTwo2.default, null) : null,
                 this.state.slideCount === 3 ? _react2.default.createElement(_SlideThree2.default, null) : null,
-                _react2.default.createElement(
-                    'div',
-                    { className: 'arrows' },
-                    _react2.default.createElement(_LeftArrow2.default, { previousSlide: this.previousSlide }),
-                    _react2.default.createElement(_RightArrow2.default, { nextSlide: this.nextSlide })
-                )
+                _react2.default.createElement(_RightArrow2.default, { nextSlide: this.nextSlide })
             );
         }
     }]);
@@ -28731,10 +28727,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var LeftArrow = function LeftArrow(props) {
     return _react2.default.createElement(
         "div",
-        { className: "backArrow" },
+        { onClick: props.previousSlide, onTouchMove: props.previousSlide, className: "backArrow" },
         _react2.default.createElement(
             "div",
-            { onClick: props.previousSlide, className: "backArrow" },
+            { className: "fade" },
             _react2.default.createElement("i", { className: "fa fa-arrow-left fa-2x", "aria-hidden": "true" })
         )
     );
@@ -28762,10 +28758,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var RightArrow = function RightArrow(props) {
     return _react2.default.createElement(
         "div",
-        { className: "nextArrow" },
+        { onClick: props.nextSlide, onTouchMove: props.nextSlide, className: "nextArrow" },
         _react2.default.createElement(
             "div",
-            { onClick: props.nextSlide, className: "nextArrow fade" },
+            { className: "fade" },
             _react2.default.createElement("i", { className: "fa fa-arrow-right fa-2x", "aria-hidden": "true" })
         )
     );

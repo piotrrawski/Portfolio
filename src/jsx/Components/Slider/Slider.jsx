@@ -38,14 +38,15 @@ class Slider extends React.Component {
     render() {
         return (
             <div className="slider">
+                <LeftArrow previousSlide={this.previousSlide} />
+
                 { this.state.slideCount === 1 ? <SlideOne /> : null }
                 { this.state.slideCount === 2 ? <SlideTwo /> : null }
                 { this.state.slideCount === 3 ? <SlideThree /> : null }
 
-                <div className='arrows'>
-                    <LeftArrow previousSlide={this.previousSlide} />
+                {/*<div className='arrows'>*/}
                     <RightArrow nextSlide={this.nextSlide} />
-                </div>
+                {/*</div>*/}
             </div>
         )
     }

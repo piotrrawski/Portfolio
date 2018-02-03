@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 const RightArrow = (props) => {
     return (
-        <div className="nextArrow">
-            <div onClick={props.nextSlide} className="nextArrow fade">
+        <div onClick={props.nextSlide} onTouchMove={props.nextSlide} className="nextArrow">
+            <div  className="fade">
                 <i className="fa fa-arrow-right fa-2x" aria-hidden="true"></i>
             </div>
         </div>

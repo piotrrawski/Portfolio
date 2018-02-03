@@ -1,35 +1,39 @@
-.arrows{
-  position: relative;
-  top: -50%;
-  display: flex;
-  justify-content: space-between;
-  .nextArrow:hover {
+.nextArrow:hover, .backArrow:hover {
     background: rgba(255,255,255,0.1);
   }
-}
 
+.nextArrow, .backArrow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .fa {
   color: rgba(255,255,255,0.7);
 }
 
-
 .slider {
-  height: 450px;
+  height: 60vh;
   width: 100%;
   color: white;
+  display: flex;
+  justify-content: center;
 }
+
 .project{
   color: rgba(255,255,255,1);
+  user-select: none;
 }
+
 .slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 80vw;
   height: 100%;
   opacity: 0.5;
 }
+
 .slide:hover{
   opacity: 1;
 }

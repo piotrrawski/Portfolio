@@ -1,14 +1,15 @@
 .work {
-  display: none;
+  //display: none;
 
   background-image: url("../images/pattern.svg");
   background-attachment: fixed;
   //display: flex;
-  flex-direction: column;
+  //flex-direction: column;
   height: 100vh;
   a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.6);
     font-size: 3rem;
+
   }
 }
