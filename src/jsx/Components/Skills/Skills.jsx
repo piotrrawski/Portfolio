@@ -8,6 +8,7 @@ class Skills extends React.Component {
                     <div className="row">
                         <div className="col-12 title">Skills</div>
                     </div>
+                    <div className="skillsTab">
                     <div className="row">
                         <div className="col-4 html"><figure className="skill">
                             <img src="dist/images/HTML5_Badge_512.png" alt="html" />
@@ -42,6 +43,7 @@ class Skills extends React.Component {
                             <figcaption><i>git</i></figcaption>
                         </figure></div>
                     </div>
+                </div>
                 </div>
             </section>
         )

@@ -278,50 +278,52 @@ header {
       display: block; } }
 
 .skills {
-  display: none;
   background-image: url("../images/pattern.svg");
   background-attachment: fixed;
   display: flex;
-  align-items: center;
-  height: 100vh; }
-  .skills .container {
-    height: 100vh; }
-  .skills .col-4 {
-    height: 18vh;
-    width: 33.33333%;
-    margin-bottom: 45px;
+  align-items: center; }
+  @media (min-width: 800px) {
+    .skills {
+      height: 100vh; } }
+  @media (min-width: 800px) {
+    .skills .container {
+      height: 100vh; } }
+  .skills .container .skillsTab {
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center; }
-
-#skillss {
-  display: none; }
+    @media (min-width: 700px) {
+      .skills .container .skillsTab {
+        flex-direction: row;
+        justify-content: space-around; } }
+    @media (min-width: 800px) {
+      .skills .container .skillsTab {
+        flex-direction: column; } }
+    .skills .container .skillsTab .col-4 {
+      margin-bottom: 5%;
+      display: flex;
+      justify-content: center; }
 
 .skill {
-  display: none;
   background-image: url("../images/pattern.svg");
   background-attachment: fixed;
   position: relative;
   display: inline-block;
-  margin: 100px;
-  max-width: 190px;
+  max-width: 145px;
   width: 100%;
   color: #bbb;
-  font-size: 16px;
+  font-size: 0.7rem;
   box-shadow: none !important;
   transform: translateZ(0); }
 
 .skill *,
 .skill:before,
 .skill:after {
-  display: none;
   box-sizing: border-box;
   transition: all 0.5s linear; }
 
 .skill:before,
 .skill:after {
-  display: none;
   box-sizing: border-box;
   border-radius: 50%;
   content: '';
@@ -335,7 +337,6 @@ header {
   border-color: transparent white; }
 
 .skill img {
-  display: none;
   max-width: 100%;
   backface-visibility: hidden;
   vertical-align: top;
@@ -343,7 +344,6 @@ header {
   padding: 10px; }
 
 .skill figcaption {
-  display: none;
   position: absolute;
   top: 5px;
   bottom: 5px;
@@ -354,7 +354,6 @@ header {
   border-radius: 50%; }
 
 .skill i {
-  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -364,7 +363,6 @@ header {
 
 .skill:hover figcaption,
 .skill.hover figcaption {
-  display: none;
   opacity: 1;
   transform: translateX(0); }
 
@@ -372,17 +370,14 @@ header {
 .skill.hover:before,
 .skill:hover:after,
 .skill.hover:after {
-  display: none;
   border-width: 10px; }
 
 .skill:hover:before,
 .skill.hover:before {
-  display: none;
   transform: rotate(45deg); }
 
 .skill:hover:after,
 .skill.hover:after {
-  display: none;
   transform: rotate(-45deg); }
 
 .work {

@@ -28174,173 +28174,177 @@ var Skills = function (_React$Component) {
                     ),
                     _react2.default.createElement(
                         "div",
-                        { className: "row" },
+                        { className: "skillsTab" },
                         _react2.default.createElement(
                             "div",
-                            { className: "col-4 html" },
+                            { className: "row" },
                             _react2.default.createElement(
-                                "figure",
-                                { className: "skill" },
-                                _react2.default.createElement("img", { src: "dist/images/HTML5_Badge_512.png", alt: "html" }),
+                                "div",
+                                { className: "col-4 html" },
                                 _react2.default.createElement(
-                                    "figcaption",
-                                    null,
+                                    "figure",
+                                    { className: "skill" },
+                                    _react2.default.createElement("img", { src: "dist/images/HTML5_Badge_512.png", alt: "html" }),
                                     _react2.default.createElement(
-                                        "i",
+                                        "figcaption",
                                         null,
-                                        "html"
+                                        _react2.default.createElement(
+                                            "i",
+                                            null,
+                                            "html"
+                                        )
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                "div",
+                                { className: "col-4 css" },
+                                _react2.default.createElement(
+                                    "figure",
+                                    { className: "skill" },
+                                    _react2.default.createElement("img", { src: "dist/images/css.png", alt: "css" }),
+                                    _react2.default.createElement(
+                                        "figcaption",
+                                        null,
+                                        _react2.default.createElement(
+                                            "i",
+                                            null,
+                                            "css"
+                                        )
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                "div",
+                                { className: "col-4 rwd" },
+                                _react2.default.createElement(
+                                    "figure",
+                                    { className: "skill" },
+                                    _react2.default.createElement("img", { src: "dist/images/rwd.png", alt: "rwd" }),
+                                    _react2.default.createElement(
+                                        "figcaption",
+                                        null,
+                                        _react2.default.createElement(
+                                            "i",
+                                            null,
+                                            "rwd"
+                                        )
                                     )
                                 )
                             )
                         ),
                         _react2.default.createElement(
                             "div",
-                            { className: "col-4 css" },
+                            { className: "row" },
                             _react2.default.createElement(
-                                "figure",
-                                { className: "skill" },
-                                _react2.default.createElement("img", { src: "dist/images/css.png", alt: "css" }),
+                                "div",
+                                { className: "col-4 js" },
                                 _react2.default.createElement(
-                                    "figcaption",
-                                    null,
+                                    "figure",
+                                    { className: "skill" },
+                                    _react2.default.createElement("img", { src: "dist/images/js.png", alt: "js" }),
                                     _react2.default.createElement(
-                                        "i",
+                                        "figcaption",
                                         null,
-                                        "css"
+                                        _react2.default.createElement(
+                                            "i",
+                                            null,
+                                            "javascript"
+                                        )
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                "div",
+                                { className: "col-4 react" },
+                                _react2.default.createElement(
+                                    "figure",
+                                    { className: "skill" },
+                                    _react2.default.createElement("img", { src: "dist/images/react.png", alt: "react" }),
+                                    _react2.default.createElement(
+                                        "figcaption",
+                                        null,
+                                        _react2.default.createElement(
+                                            "i",
+                                            null,
+                                            "react"
+                                        )
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                "div",
+                                { className: "col-4 es6" },
+                                _react2.default.createElement(
+                                    "figure",
+                                    { className: "skill" },
+                                    _react2.default.createElement("img", { src: "dist/images/es6.png", alt: "es6" }),
+                                    _react2.default.createElement(
+                                        "figcaption",
+                                        null,
+                                        _react2.default.createElement(
+                                            "i",
+                                            null,
+                                            "es6"
+                                        )
                                     )
                                 )
                             )
                         ),
                         _react2.default.createElement(
                             "div",
-                            { className: "col-4 rwd" },
+                            { className: "row last" },
                             _react2.default.createElement(
-                                "figure",
-                                { className: "skill" },
-                                _react2.default.createElement("img", { src: "dist/images/rwd.png", alt: "rwd" }),
+                                "div",
+                                { className: "col-4 jquery" },
                                 _react2.default.createElement(
-                                    "figcaption",
-                                    null,
+                                    "figure",
+                                    { className: "skill" },
+                                    _react2.default.createElement("img", { src: "dist/images/jquery.png", alt: "jquery" }),
                                     _react2.default.createElement(
-                                        "i",
+                                        "figcaption",
                                         null,
-                                        "rwd"
+                                        _react2.default.createElement(
+                                            "i",
+                                            null,
+                                            "jquery"
+                                        )
                                     )
                                 )
-                            )
-                        )
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "row" },
-                        _react2.default.createElement(
-                            "div",
-                            { className: "col-4 js" },
+                            ),
                             _react2.default.createElement(
-                                "figure",
-                                { className: "skill" },
-                                _react2.default.createElement("img", { src: "dist/images/js.png", alt: "js" }),
+                                "div",
+                                { className: "col-4 sass" },
                                 _react2.default.createElement(
-                                    "figcaption",
-                                    null,
+                                    "figure",
+                                    { className: "skill" },
+                                    _react2.default.createElement("img", { src: "dist/images/sass.png", alt: "sass" }),
                                     _react2.default.createElement(
-                                        "i",
+                                        "figcaption",
                                         null,
-                                        "javascript"
+                                        _react2.default.createElement(
+                                            "i",
+                                            null,
+                                            "sass"
+                                        )
                                     )
                                 )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            "div",
-                            { className: "col-4 react" },
+                            ),
                             _react2.default.createElement(
-                                "figure",
-                                { className: "skill" },
-                                _react2.default.createElement("img", { src: "dist/images/react.png", alt: "react" }),
+                                "div",
+                                { className: "col-4 git" },
                                 _react2.default.createElement(
-                                    "figcaption",
-                                    null,
+                                    "figure",
+                                    { className: "skill" },
+                                    _react2.default.createElement("img", { src: "dist/images/git.png", alt: "git" }),
                                     _react2.default.createElement(
-                                        "i",
+                                        "figcaption",
                                         null,
-                                        "react"
-                                    )
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            "div",
-                            { className: "col-4 es6" },
-                            _react2.default.createElement(
-                                "figure",
-                                { className: "skill" },
-                                _react2.default.createElement("img", { src: "dist/images/es6.png", alt: "es6" }),
-                                _react2.default.createElement(
-                                    "figcaption",
-                                    null,
-                                    _react2.default.createElement(
-                                        "i",
-                                        null,
-                                        "es6"
-                                    )
-                                )
-                            )
-                        )
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "row last" },
-                        _react2.default.createElement(
-                            "div",
-                            { className: "col-4 jquery" },
-                            _react2.default.createElement(
-                                "figure",
-                                { className: "skill" },
-                                _react2.default.createElement("img", { src: "dist/images/jquery.png", alt: "jquery" }),
-                                _react2.default.createElement(
-                                    "figcaption",
-                                    null,
-                                    _react2.default.createElement(
-                                        "i",
-                                        null,
-                                        "jquery"
-                                    )
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            "div",
-                            { className: "col-4 sass" },
-                            _react2.default.createElement(
-                                "figure",
-                                { className: "skill" },
-                                _react2.default.createElement("img", { src: "dist/images/sass.png", alt: "sass" }),
-                                _react2.default.createElement(
-                                    "figcaption",
-                                    null,
-                                    _react2.default.createElement(
-                                        "i",
-                                        null,
-                                        "sass"
-                                    )
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            "div",
-                            { className: "col-4 git" },
-                            _react2.default.createElement(
-                                "figure",
-                                { className: "skill" },
-                                _react2.default.createElement("img", { src: "dist/images/git.png", alt: "git" }),
-                                _react2.default.createElement(
-                                    "figcaption",
-                                    null,
-                                    _react2.default.createElement(
-                                        "i",
-                                        null,
-                                        "git"
+                                        _react2.default.createElement(
+                                            "i",
+                                            null,
+                                            "git"
+                                        )
                                     )
                                 )
                             )
