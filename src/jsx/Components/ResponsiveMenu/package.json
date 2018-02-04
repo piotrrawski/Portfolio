@@ -1,0 +1,6 @@
+{
+  "name" : "ResponsiveMenu",
+  "version": "0.0.0",
+  "private": true,
+  "main": "ResponsiveMenu.jsx"
+}

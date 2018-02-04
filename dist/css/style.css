@@ -491,3 +491,24 @@ footer {
     .title {
       padding: 75px 0;
       font-size: 4rem; } }
+
+.responsivemenu {
+  height: 100vh;
+  background-image: url("../images/pattern.svg");
+  background-attachment: fixed;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  color: rgba(31, 31, 31, 0.9);
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 12%; }
+  .responsivemenu li {
+    border: solid 1px green;
+    height: 20vh;
+    display: flex;
+    align-items: center; }
+    .responsivemenu li a {
+      text-decoration: none;
+      color: rgba(31, 31, 31, 0.9); }

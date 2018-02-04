@@ -15,6 +15,7 @@ import ViewTwo from './Components/Views/ViewTwo';
 import ViewThree from './Components/Views/ViewThree';
 import ViewFour from './Components/Views/ViewFour';
 import ViewFive from './Components/Views/ViewFive';
+import ResponsiveMenu from './Components/ResponsiveMenu'
 
 class App extends React.Component {
     render() {
@@ -25,6 +26,7 @@ class App extends React.Component {
                 <ViewThree/>
                 <ViewFour/>
                 <ViewFive/>
+                <ResponsiveMenu/>
             </div>
         )
     }
