@@ -12,8 +12,8 @@ class Contact extends React.Component {
                         <h1 className="col-12 contactName">Piotr Rawski</h1>
                         <div className="col-12">
                             <a href="mailto:piotr.rawski@gmail.com"><img className="icon" src="dist/images/envelope-2.svg"></img></a>
-                            <a href="https://google.com"><img className="icon" src="dist/images/github-logo-2.svg"></img></a>
-                            <a href="https://google.com"><img className="icon" src="dist/images/linkedin-sign-2.svg"></img></a>
+                            <a href="https://github.com/piotrrawski"><img className="icon" src="dist/images/github-logo-2.svg"></img></a>
+                            <a href="http://www.linkedin.com/in/piotr-rawski"><img className="icon" src="dist/images/linkedin-sign-2.svg"></img></a>
                         </div>
                     </div>
                 </div>

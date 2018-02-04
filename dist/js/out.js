@@ -28893,12 +28893,12 @@ var Contact = function (_React$Component) {
                             ),
                             _react2.default.createElement(
                                 "a",
-                                { href: "https://google.com" },
+                                { href: "https://github.com/piotrrawski" },
                                 _react2.default.createElement("img", { className: "icon", src: "dist/images/github-logo-2.svg" })
                             ),
                             _react2.default.createElement(
                                 "a",
-                                { href: "https://google.com" },
+                                { href: "http://www.linkedin.com/in/piotr-rawski" },
                                 _react2.default.createElement("img", { className: "icon", src: "dist/images/linkedin-sign-2.svg" })
                             )
                         )
