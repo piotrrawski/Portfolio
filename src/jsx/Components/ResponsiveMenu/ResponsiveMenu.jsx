@@ -3,15 +3,13 @@ import React from 'react';
 class ResponsiveMenu extends React.Component {
     render () {
         return (
-            <div>
                 <ul className="responsivemenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#abo">About</a></li>
-                    <li><a href="#skillss">Skills</a></li>
-                    <li><a href="#port">My&nbsp;work</a></li>
-                    <li><a href="#cont">Contact</a></li>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#abo"><li>About</li></a>
+                    <a href="#skillss"><li>Skills</li></a>
+                    <a href="#port"><li>My&nbsp;work</li></a>
+                    <a href="#cont"><li>Contact</li></a>
                 </ul>
-            </div>
         )
     }
 }

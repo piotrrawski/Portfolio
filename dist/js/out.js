@@ -27582,6 +27582,10 @@ var _Cookies = __webpack_require__(248);
 
 var _Cookies2 = _interopRequireDefault(_Cookies);
 
+var _ResponsiveMenu = __webpack_require__(268);
+
+var _ResponsiveMenu2 = _interopRequireDefault(_ResponsiveMenu);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -28975,55 +28979,51 @@ var ResponsiveMenu = function (_React$Component) {
         key: "render",
         value: function render() {
             return _react2.default.createElement(
-                "div",
-                null,
+                "ul",
+                { className: "responsivemenu" },
                 _react2.default.createElement(
-                    "ul",
-                    { className: "responsivemenu" },
+                    "a",
+                    { href: "#" },
                     _react2.default.createElement(
                         "li",
                         null,
-                        _react2.default.createElement(
-                            "a",
-                            { href: "#" },
-                            "Home"
-                        )
-                    ),
+                        "Home"
+                    )
+                ),
+                _react2.default.createElement(
+                    "a",
+                    { href: "#abo" },
                     _react2.default.createElement(
                         "li",
                         null,
-                        _react2.default.createElement(
-                            "a",
-                            { href: "#abo" },
-                            "About"
-                        )
-                    ),
+                        "About"
+                    )
+                ),
+                _react2.default.createElement(
+                    "a",
+                    { href: "#skillss" },
                     _react2.default.createElement(
                         "li",
                         null,
-                        _react2.default.createElement(
-                            "a",
-                            { href: "#skillss" },
-                            "Skills"
-                        )
-                    ),
+                        "Skills"
+                    )
+                ),
+                _react2.default.createElement(
+                    "a",
+                    { href: "#port" },
                     _react2.default.createElement(
                         "li",
                         null,
-                        _react2.default.createElement(
-                            "a",
-                            { href: "#port" },
-                            "My\xA0work"
-                        )
-                    ),
+                        "My\xA0work"
+                    )
+                ),
+                _react2.default.createElement(
+                    "a",
+                    { href: "#cont" },
                     _react2.default.createElement(
                         "li",
                         null,
-                        _react2.default.createElement(
-                            "a",
-                            { href: "#cont" },
-                            "Contact"
-                        )
+                        "Contact"
                     )
                 )
             );

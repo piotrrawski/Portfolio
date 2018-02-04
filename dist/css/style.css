@@ -493,22 +493,23 @@ footer {
       font-size: 4rem; } }
 
 .responsivemenu {
+  display: none;
+  flex-direction: column;
   height: 100vh;
   background-image: url("../images/pattern.svg");
   background-attachment: fixed;
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
   color: rgba(31, 31, 31, 0.9);
-  font-size: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-top: 12%; }
-  .responsivemenu li {
-    border: solid 1px green;
-    height: 20vh;
+  font-size: 4rem; }
+  .responsivemenu a {
+    text-decoration: none;
+    color: rgba(31, 31, 31, 0.9);
     display: flex;
-    align-items: center; }
-    .responsivemenu li a {
-      text-decoration: none;
-      color: rgba(31, 31, 31, 0.9); }
+    align-items: center;
+    border: solid 2px green;
+    height: 20vh; }
+  .responsivemenu a:nth-child(even) {
+    background: rgba(255, 255, 255, 0.1); }
+  .responsivemenu a:nth-child(odd) {
+    background: rgba(0, 0, 0, 0.1); }
