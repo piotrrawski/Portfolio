@@ -1,4 +1,4 @@
-https://piotrrawski.github.io
+https://piotrrawski.github.io/Portfolio/
 # Under Construction
 # My portfolio site
 This is a webpage about some basic info aboute me. Created in React and SASS.
