@@ -3,14 +3,14 @@ import React, { Component } from 'react';
 const SlideOne= (props) => {
 
     let background = {
-        backgroundImage: 'url("./dist/images/s1.jpeg")',
+        backgroundImage: 'url("./dist/images/psd10w.png")',
         backgroundSize: 'cover',
-        backgroundPosition: 'center'
+        // backgroundPosition: 'center'
     }
 
-    return <a target="blank" href="https://google.com">
+    return <a target="blank" href="https://piotrrawski.github.io/10-Ways/">
          <div style={background} className="slide fade">
-         <div className="project">project one</div>
+         <div className="project">10Ways from PSD</div>
          </div>
         </a>
 }

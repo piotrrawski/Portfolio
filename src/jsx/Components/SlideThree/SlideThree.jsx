@@ -3,14 +3,15 @@ import React, { Component } from 'react';
 const SlideThree= (props) => {
 
     let background = {
-        backgroundImage: 'url(./dist/images/s4.jpeg)',
+        backgroundImage: 'url(./dist/images/cg.png)',
         backgroundSize: 'cover',
-        backgroundPosition: 'center'
+        backgroundRepeat: 'no-repeat',
+        // backgroundPosition: 'center'
     }
 
-    return <a target="blank" href="https://google.com">
+    return <a target="blank" href="https://piotrrawski.github.io/Collector-game/">
         <div style={background} className="slide fade">
-            <div className="project">project three</div>
+            <div className="project">Collector Game</div>
         </div>
     </a>
 }

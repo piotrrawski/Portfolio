@@ -28615,21 +28615,21 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var SlideOne = function SlideOne(props) {
 
     var background = {
-        backgroundImage: 'url("./dist/images/s1.jpeg")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
+        backgroundImage: 'url("./dist/images/psd10w.png")',
+        backgroundSize: 'cover'
+        // backgroundPosition: 'center'
     };
 
     return _react2.default.createElement(
         'a',
-        { target: 'blank', href: 'https://google.com' },
+        { target: 'blank', href: 'https://piotrrawski.github.io/10-Ways/' },
         _react2.default.createElement(
             'div',
             { style: background, className: 'slide fade' },
             _react2.default.createElement(
                 'div',
                 { className: 'project' },
-                'project one'
+                '10Ways from PSD'
             )
         )
     );
@@ -28657,21 +28657,21 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var SlideTwo = function SlideTwo(props) {
 
     var background = {
-        backgroundImage: 'url(./dist/images/s6.jpeg)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
+        backgroundImage: 'url(./dist/images/ms.png)',
+        backgroundSize: 'cover'
+        // backgroundPosition: 'center'
     };
 
     return _react2.default.createElement(
         'a',
-        { target: 'blank', href: 'https://google.com' },
+        { target: 'blank', href: 'https://piotrrawski.github.io/Moviesearcher/gi' },
         _react2.default.createElement(
             'div',
             { style: background, className: 'slide fade' },
             _react2.default.createElement(
                 'div',
                 { className: 'project' },
-                'project two'
+                'Movie Searcher'
             )
         )
     );
@@ -28699,21 +28699,22 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var SlideThree = function SlideThree(props) {
 
     var background = {
-        backgroundImage: 'url(./dist/images/s4.jpeg)',
+        backgroundImage: 'url(./dist/images/cg.png)',
         backgroundSize: 'cover',
-        backgroundPosition: 'center'
+        backgroundRepeat: 'no-repeat'
+        // backgroundPosition: 'center'
     };
 
     return _react2.default.createElement(
         'a',
-        { target: 'blank', href: 'https://google.com' },
+        { target: 'blank', href: 'https://piotrrawski.github.io/Collector-game/' },
         _react2.default.createElement(
             'div',
             { style: background, className: 'slide fade' },
             _react2.default.createElement(
                 'div',
                 { className: 'project' },
-                'project three'
+                'Collector Game'
             )
         )
     );

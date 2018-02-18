@@ -3,14 +3,14 @@ import React, { Component } from 'react';
 const SlideTwo= (props) => {
 
     let background = {
-        backgroundImage: 'url(./dist/images/s6.jpeg)',
+        backgroundImage: 'url(./dist/images/ms.png)',
         backgroundSize: 'cover',
-        backgroundPosition: 'center'
+        // backgroundPosition: 'center'
     }
 
-    return <a target="blank" href="https://google.com">
+    return <a target="blank" href="https://piotrrawski.github.io/Moviesearcher/gi">
         <div style={background} className="slide fade">
-            <div className="project">project two</div>
+            <div className="project">Movie Searcher</div>
         </div></a>
 }
 
