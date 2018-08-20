@@ -1,0 +1,6 @@
+{
+  "name" : "SlideFive",
+  "version": "0.0.0",
+  "private": true,
+  "main": "SlideFive.jsx"
+}

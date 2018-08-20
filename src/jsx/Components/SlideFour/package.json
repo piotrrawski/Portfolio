@@ -1,0 +1,6 @@
+{
+  "name" : "SlideFour",
+  "version": "0.0.0",
+  "private": true,
+  "main": "SlideFour.jsx"
+}
